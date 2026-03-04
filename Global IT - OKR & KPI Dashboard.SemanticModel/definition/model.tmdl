@@ -1,0 +1,22 @@
+model Model
+	culture: es-ES
+	defaultPowerBIDataSourceVersion: powerBI_V3
+	sourceQueryCulture: es-AR
+	dataAccessOptions
+		fastCombine
+		legacyRedirects
+		returnErrorValuesAsNull
+
+/// Errores en las consultas cargadas en 23/7/2025 17:25:35.
+queryGroup 'Errores en las consultas: 23/7/2025 17:25:35'
+
+	annotation PBI_QueryGroupOrder = 0
+
+annotation PBI_QueryOrder = []
+
+annotation __PBI_TimeIntelligenceEnabled = 1
+
+annotation PBI_ProTooling = ["DevMode"]
+
+ref cultureInfo es-ES
+

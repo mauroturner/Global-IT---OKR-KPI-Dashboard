@@ -1,0 +1,11 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "SemanticModel",
+    "displayName": "Global IT - OKR & KPI Dashboard"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "c0f1edd6-4e15-4860-a807-eff8b81a21b8"
+  }
+}

@@ -1,0 +1,139 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.6.0/schema.json",
+  "name": "44dbc775da0073c2c4ba",
+  "position": {
+    "x": 7.1428571428571432,
+    "y": 63.0952380952381,
+    "z": 1000,
+    "height": 232.14285714285714,
+    "width": 301.1904761904762,
+    "tabOrder": 2000
+  },
+  "visual": {
+    "visualType": "textbox",
+    "objects": {
+      "general": [
+        {
+          "properties": {
+            "paragraphs": [
+              {
+                "textRuns": [
+                  {
+                    "value": "Filters ",
+                    "textStyle": {
+                      "fontWeight": "bold",
+                      "fontFamily": "DIN Light",
+                      "fontSize": "12pt"
+                    }
+                  },
+                  {
+                    "value": "narrow the view to only the data that matches the selected criteria (e.g., function, role, location, timeframe), ",
+                    "textStyle": {
+                      "fontFamily": "DIN Light",
+                      "fontSize": "12pt"
+                    }
+                  },
+                  {
+                    "value": "hiding all non‑relevant information",
+                    "textStyle": {
+                      "fontWeight": "bold",
+                      "fontFamily": "DIN Light",
+                      "fontSize": "12pt"
+                    }
+                  },
+                  {
+                    "value": " to support focused, decision‑driven analysis.",
+                    "textStyle": {
+                      "fontFamily": "DIN Light",
+                      "fontSize": "12pt"
+                    }
+                  }
+                ],
+                "listType": "bullet"
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "Visual interactions",
+                    "textStyle": {
+                      "fontWeight": "bold",
+                      "fontFamily": "DIN Light",
+                      "fontSize": "12pt"
+                    }
+                  },
+                  {
+                    "value": " (clicking on KPIs, charts, or table rows) ",
+                    "textStyle": {
+                      "fontFamily": "DIN Light",
+                      "fontSize": "12pt"
+                    }
+                  },
+                  {
+                    "value": "highlight related data across the dashboard while keeping the remaining information visible, ",
+                    "textStyle": {
+                      "fontWeight": "bold",
+                      "fontFamily": "DIN Light",
+                      "fontSize": "12pt"
+                    }
+                  },
+                  {
+                    "value": "helping ",
+                    "textStyle": {
+                      "fontFamily": "DIN Light",
+                      "fontSize": "12pt"
+                    }
+                  },
+                  {
+                    "value": "draw attention to key patterns, trends, and relationships",
+                    "textStyle": {
+                      "fontWeight": "bold",
+                      "fontFamily": "DIN Light",
+                      "fontSize": "12pt"
+                    }
+                  },
+                  {
+                    "value": " without losing overall context.",
+                    "textStyle": {
+                      "fontFamily": "DIN Light",
+                      "fontSize": "12pt"
+                    }
+                  }
+                ],
+                "listType": "bullet"
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "Hold ",
+                    "textStyle": {
+                      "fontFamily": "DIN Light",
+                      "fontSize": "12pt"
+                    }
+                  },
+                  {
+                    "value": "CTRL",
+                    "textStyle": {
+                      "fontWeight": "bold",
+                      "fontFamily": "DIN Light",
+                      "fontSize": "12pt"
+                    }
+                  },
+                  {
+                    "value": " to select multiple items or filter values and quickly compare segments.",
+                    "textStyle": {
+                      "fontFamily": "DIN Light",
+                      "fontSize": "12pt"
+                    }
+                  }
+                ],
+                "listType": "bullet"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "drillFilterOtherVisuals": true
+  },
+  "parentGroupName": "9b795ca4d0bb1925c639"
+}

@@ -1,0 +1,52 @@
+cultureInfo es-ES
+
+	linguisticMetadata =
+			{
+			  "Version": "4.1.0",
+			  "Language": "en-US",
+			  "Entities": {
+			    "trainingrequests.request_title": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "TrainingRequests",
+			          "ConceptualProperty": "Request_Title"
+			        }
+			      },
+			      "State": "Generated"
+			    },
+			    "trainingrequests.request_description": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "TrainingRequests",
+			          "ConceptualProperty": "Request_Description"
+			        }
+			      },
+			      "State": "Generated"
+			    },
+			    "trainingrequests.l_sponsor": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "TrainingRequests",
+			          "ConceptualProperty": "L_Sponsor"
+			        }
+			      },
+			      "State": "Generated"
+			    },
+			    "trainingrequests.additional_notes": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "TrainingRequests",
+			          "ConceptualProperty": "Additional_Notes"
+			        }
+			      },
+			      "State": "Generated"
+			    }
+			  },
+			  "Agents": {
+			    "Internal": {
+			      "Version": "1.1.0"
+			    }
+			  }
+			}
+		contentType: json
+

@@ -1,0 +1,17 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.6.0/schema.json",
+  "name": "9b795ca4d0bb1925c639",
+  "position": {
+    "x": 596.99286476633324,
+    "y": 13.707166935766844,
+    "z": 13000,
+    "height": 304.28571428571428,
+    "width": 314.28571428571428,
+    "tabOrder": 16000
+  },
+  "visualGroup": {
+    "displayName": "Help Panel",
+    "groupMode": "ScaleMode"
+  },
+  "isHidden": true
+}
