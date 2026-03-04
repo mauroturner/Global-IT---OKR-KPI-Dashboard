@@ -1,0 +1,115 @@
+table Calendar
+	lineageTag: 6dd87062-1e93-4a6b-8ec9-0904b0b053c8
+
+	column Date
+		formatString: General Date
+		lineageTag: f1875589-53df-4e38-a9a6-3fc76f4dc627
+		summarizeBy: none
+		isNameInferred
+		sourceColumn: [Date]
+
+		variation Variación
+			isDefault
+			relationship: f35beebc-db37-4019-840e-d016b42a2e08
+			defaultHierarchy: LocalDateTable_9926a56d-ad17-4ef3-b1c2-9b26e785e34b.'Jerarquía de fechas'
+
+		annotation SummarizationSetBy = Automatic
+
+	column Year
+		formatString: 0
+		lineageTag: 3d76e382-4aaf-490b-ab1e-e2d8ab0fd27c
+		summarizeBy: sum
+		isNameInferred
+		sourceColumn: [Year]
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Month No'
+		formatString: 0
+		lineageTag: 6574e0c6-4a99-497b-9b1b-93299c1d0fbc
+		summarizeBy: sum
+		isNameInferred
+		sourceColumn: [Month No]
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Month Name'
+		lineageTag: 4ac512d2-e5e1-4336-9c3c-9c48c15341c3
+		summarizeBy: none
+		isNameInferred
+		sourceColumn: [Month Name]
+
+		annotation SummarizationSetBy = Automatic
+
+	column Month-Year
+		lineageTag: f9ae6794-cb2c-4a7c-b0a0-b50738e1cd0f
+		summarizeBy: none
+		isNameInferred
+		sourceColumn: [Month-Year]
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Month-Year Sort'
+		lineageTag: 34dcbabc-bd4c-49ff-adb5-2d48c4c0cb87
+		summarizeBy: none
+		isNameInferred
+		sourceColumn: [Month-Year Sort]
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Fiscal Year'
+		lineageTag: 895fcd65-4d37-4766-8c78-c82acae22e68
+		summarizeBy: none
+		isNameInferred
+		sourceColumn: [Fiscal Year]
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Fiscal Quarter'
+		lineageTag: ec965726-56d6-4062-ae96-3430e78b4bf8
+		summarizeBy: none
+		isNameInferred
+		sourceColumn: [Fiscal Quarter]
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Fiscal Month No'
+		formatString: 0
+		lineageTag: 3b4a16fe-6762-45cc-8cb3-b1c4f2661700
+		summarizeBy: sum
+		isNameInferred
+		sourceColumn: [Fiscal Month No]
+
+		annotation SummarizationSetBy = Automatic
+
+	partition Calendar = calculated
+		mode: import
+		source = ```
+				
+				-- Buscamos el rango dinámico basado en tu tabla de hechos de OKRs
+				VAR MinDate = MIN('results'[Date]) 
+				VAR MaxDate = MAX('results'[Date])
+				
+				RETURN
+				ADDCOLUMNS (
+				    CALENDAR ( MinDate, MaxDate ),
+				    "Year", YEAR ( [Date] ),
+				    "Month No", MONTH ( [Date] ),
+				    "Month Name", FORMAT ( [Date], "MMMM", "en-US" ), -- Forzado en-US por estándar global
+				    "Month-Year", FORMAT ( [Date], "MMM-yy", "en-US" ), 
+				    "Month-Year Sort", FORMAT ( [Date], "YYYYMM" ),
+				    
+				    -- Lógica Fiscal Accenture (Septiembre - Agosto)
+				    "Fiscal Year", "FY" & RIGHT(FORMAT(IF(MONTH([Date]) >= 9, YEAR([Date]) + 1, YEAR([Date])), "0000"), 2),
+				    "Fiscal Quarter", "FQ" & SWITCH( TRUE(),
+				        MONTH([Date]) IN {9, 10, 11}, "1",
+				        MONTH([Date]) IN {12, 1, 2}, "2",
+				        MONTH([Date]) IN {3, 4, 5}, "3",
+				        "4"
+				    ),
+				    "Fiscal Month No", MOD( MONTH([Date]) - 9 + 12, 12 ) + 1
+				)
+				```
+
+	annotation PBI_Id = c766ec81d52c4230afe9552fc684a64c
+

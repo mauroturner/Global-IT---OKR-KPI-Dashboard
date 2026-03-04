@@ -7,7 +7,125 @@
         "x": 47.216174746642992,
         "y": 0
       },
-      "nodes": [],
+      "nodes": [
+        {
+          "location": {
+            "x": 902.68531530458688,
+            "y": 421.65489581997178
+          },
+          "nodeIndex": "kpi_owners",
+          "nodeLineageTag": "16ac4353-047b-47ff-a783-d1f5ce940422",
+          "size": {
+            "height": 128,
+            "width": 234
+          },
+          "zIndex": 1
+        },
+        {
+          "location": {
+            "x": 334.20882287387712,
+            "y": 389.65316607271296
+          },
+          "nodeIndex": "kpi_sources",
+          "nodeLineageTag": "c4b0a93b-aafd-4b32-9899-29f1cedd1e27",
+          "size": {
+            "height": 128,
+            "width": 234
+          },
+          "zIndex": 2
+        },
+        {
+          "location": {
+            "x": 618.45252514646472,
+            "y": 200.20963392362364
+          },
+          "nodeIndex": "kpis",
+          "nodeLineageTag": "10ee568f-9b11-4192-ae01-ac56e177124d",
+          "size": {
+            "height": 200,
+            "width": 234
+          },
+          "zIndex": 3
+        },
+        {
+          "location": {
+            "x": 744.18361906416,
+            "y": -1.702817336299745
+          },
+          "nodeIndex": "objetives",
+          "nodeLineageTag": "089ff212-4bf5-4ce7-baf5-5b636558ecdc",
+          "size": {
+            "height": 128,
+            "width": 234
+          },
+          "zIndex": 4
+        },
+        {
+          "location": {
+            "x": 1186.8823185616061,
+            "y": 585.67416510875023
+          },
+          "nodeIndex": "owners",
+          "nodeLineageTag": "ceb0ad19-0158-4cd1-98e7-951c5763543e",
+          "size": {
+            "height": 128,
+            "width": 234
+          },
+          "zIndex": 5
+        },
+        {
+          "location": {
+            "x": 459.92865467606384,
+            "y": -50
+          },
+          "nodeIndex": "Results",
+          "nodeLineageTag": "ffa596c6-aec4-4c63-912a-804618788065",
+          "size": {
+            "height": 200,
+            "width": 234
+          },
+          "zIndex": 6
+        },
+        {
+          "location": {
+            "x": 50,
+            "y": 513.0444362909376
+          },
+          "nodeIndex": "sources",
+          "nodeLineageTag": "cc73ef75-9055-4fd9-a07d-02f12107d28f",
+          "size": {
+            "height": 128,
+            "width": 234
+          },
+          "zIndex": 7
+        },
+        {
+          "location": {
+            "x": 1654.8823185616061,
+            "y": 264.2030815543751
+          },
+          "nodeIndex": "Calendar",
+          "nodeLineageTag": "6dd87062-1e93-4a6b-8ec9-0904b0b053c8",
+          "size": {
+            "height": 217.634001,
+            "width": 234
+          },
+          "zIndex": 9
+        },
+        {
+          "location": {
+            "x": 1438.9058245616059,
+            "y": 592.42903755437521
+          },
+          "nodeIndex": "units",
+          "nodeLineageTag": "d2da33ee-65e5-435e-90a5-d511c19b0e28",
+          "size": {
+            "height": 128,
+            "width": 234
+          },
+          "zIndex": 0
+        }
+      ],
       "name": "Todas las tablas",
       "zoomValue": 56.447393005377734,
       "pinKeyFieldsToTop": false,

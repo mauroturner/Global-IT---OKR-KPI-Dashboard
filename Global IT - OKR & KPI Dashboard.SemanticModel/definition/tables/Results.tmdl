@@ -1,0 +1,64 @@
+table Results
+	lineageTag: ffa596c6-aec4-4c63-912a-804618788065
+
+	column Result_ID
+		dataType: int64
+		formatString: 0
+		lineageTag: 7eb8324c-6034-4577-9b50-bbf300eab304
+		summarizeBy: count
+		sourceColumn: Result_ID
+
+		annotation SummarizationSetBy = Automatic
+
+	column KPI_ID
+		dataType: int64
+		formatString: 0
+		lineageTag: 56f8413a-8610-4945-9887-610cc5c9d7e7
+		summarizeBy: none
+		sourceColumn: KPI_ID
+
+		annotation SummarizationSetBy = Automatic
+
+	column Date
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: 7bf65e9f-a318-4fbd-9f65-419e37bed182
+		summarizeBy: none
+		sourceColumn: Date
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column Actual_Value
+		dataType: double
+		lineageTag: 772a0c7d-b421-469c-a358-87297e819ca6
+		summarizeBy: sum
+		sourceColumn: Actual_Value
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column Is_Beginning_Number
+		dataType: boolean
+		formatString: """TRUE"";""TRUE"";""FALSE"""
+		lineageTag: d08f25ab-8741-49d5-ad71-1192d264e559
+		summarizeBy: none
+		sourceColumn: Is_Beginning_Number
+
+		annotation SummarizationSetBy = Automatic
+
+	partition Results = m
+		mode: import
+		source =
+				let
+				    Origen = Excel.Workbook(File.Contents("C:\Users\mauro\Desktop\Accenture\Dashboard okrs\Datasets\okrs.xlsx"), null, true),
+				    Results_Sheet = Origen{[Item="Results",Kind="Sheet"]}[Data],
+				    #"Encabezados promovidos" = Table.PromoteHeaders(Results_Sheet, [PromoteAllScalars=true]),
+				    #"Tipo cambiado" = Table.TransformColumnTypes(#"Encabezados promovidos",{{"Result_ID", Int64.Type}, {"KPI_ID", Int64.Type}, {"Date", type date}, {"Actual_Value", type number}, {"Is_Beginning_Number", type logical}})
+				in
+				    #"Tipo cambiado"
+
+	annotation PBI_ResultType = Exception
+

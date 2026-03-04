@@ -1,0 +1,39 @@
+relationship AutoDetected_f1c9f5cf-80f9-42ff-ae17-6a1a79d46c7e
+	fromColumn: kpi_sources.Source_ID
+	toColumn: sources.Source_ID
+
+relationship AutoDetected_00e20d4f-77b3-47ec-aa7d-dc9ca6374532
+	fromColumn: kpi_owners.Owner_ID
+	toColumn: owners.Owner_ID
+
+relationship AutoDetected_58658ba0-d148-4cda-9d61-5f0b173f4eb0
+	fromColumn: Results.KPI_ID
+	toColumn: kpis.KPI_ID
+
+relationship AutoDetected_6eedef78-222f-4e78-9195-7b13b0d7a657
+	crossFilteringBehavior: bothDirections
+	fromColumn: kpi_sources.KPI_ID
+	toColumn: kpis.KPI_ID
+
+relationship AutoDetected_18cae36c-6727-4b63-a9ef-0020fb971363
+	crossFilteringBehavior: bothDirections
+	fromColumn: kpi_owners.KPI_ID
+	toColumn: kpis.KPI_ID
+
+relationship AutoDetected_5ae873d6-1978-435c-903a-8215ee7a7762
+	fromColumn: kpis.Objetive_ID
+	toColumn: objetives.Objetive_ID
+
+relationship f35beebc-db37-4019-840e-d016b42a2e08
+	joinOnDateBehavior: datePartOnly
+	fromColumn: Calendar.Date
+	toColumn: LocalDateTable_9926a56d-ad17-4ef3-b1c2-9b26e785e34b.Date
+
+relationship 7a39c031-5810-64ac-89d2-aafcf48db142
+	fromColumn: Results.Date
+	toColumn: Calendar.Date
+
+relationship AutoDetected_86a701cc-42f6-4d6c-a786-f4b13a2aaa33
+	fromColumn: kpis.Unit_ID
+	toColumn: units.Unit_ID
+

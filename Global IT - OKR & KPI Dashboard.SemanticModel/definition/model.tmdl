@@ -12,11 +12,23 @@ queryGroup 'Errores en las consultas: 23/7/2025 17:25:35'
 
 	annotation PBI_QueryGroupOrder = 0
 
-annotation PBI_QueryOrder = []
+annotation PBI_QueryOrder = ["sources","owners","Results","objetives","kpis","kpi_sources","kpi_owners","units"]
 
 annotation __PBI_TimeIntelligenceEnabled = 1
 
 annotation PBI_ProTooling = ["DevMode"]
+
+ref table sources
+ref table owners
+ref table Results
+ref table DateTableTemplate_1544e671-91ec-4382-a205-e4ad197383d9
+ref table objetives
+ref table kpis
+ref table kpi_sources
+ref table kpi_owners
+ref table Calendar
+ref table LocalDateTable_9926a56d-ad17-4ef3-b1c2-9b26e785e34b
+ref table units
 
 ref cultureInfo es-ES
 

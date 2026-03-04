@@ -1,0 +1,33 @@
+table units
+	lineageTag: d2da33ee-65e5-435e-90a5-d511c19b0e28
+
+	column Unit_ID
+		dataType: int64
+		formatString: 0
+		lineageTag: 5188f43e-56d5-4b23-bc73-83079e037166
+		summarizeBy: none
+		sourceColumn: Unit_ID
+
+		annotation SummarizationSetBy = Automatic
+
+	column Unit_Name
+		dataType: string
+		lineageTag: 9ee321d7-f7f7-476b-be5b-1d68f6b48576
+		summarizeBy: none
+		sourceColumn: Unit_Name
+
+		annotation SummarizationSetBy = Automatic
+
+	partition units = m
+		mode: import
+		source =
+				let
+				    Origen = Excel.Workbook(File.Contents("C:\Users\mauro\Desktop\Accenture\Dashboard okrs\Datasets\okrs.xlsx"), null, true),
+				    units_Sheet = Origen{[Item="units",Kind="Sheet"]}[Data],
+				    #"Encabezados promovidos" = Table.PromoteHeaders(units_Sheet, [PromoteAllScalars=true]),
+				    #"Tipo cambiado" = Table.TransformColumnTypes(#"Encabezados promovidos",{{"Unit_ID", Int64.Type}, {"Unit_Name", type text}})
+				in
+				    #"Tipo cambiado"
+
+	annotation PBI_ResultType = Table
+

@@ -1,0 +1,33 @@
+table sources
+	lineageTag: cc73ef75-9055-4fd9-a07d-02f12107d28f
+
+	column Source_ID
+		dataType: int64
+		formatString: 0
+		lineageTag: a1b76647-1276-40cd-bb6e-bd46e4f82a28
+		summarizeBy: none
+		sourceColumn: Source_ID
+
+		annotation SummarizationSetBy = Automatic
+
+	column Source_Name
+		dataType: string
+		lineageTag: 20c0053a-fc71-4ec9-a536-4eb5923fbeb3
+		summarizeBy: none
+		sourceColumn: Source_Name
+
+		annotation SummarizationSetBy = Automatic
+
+	partition sources = m
+		mode: import
+		source =
+				let
+				    Origen = Excel.Workbook(File.Contents("C:\Users\mauro\Desktop\Accenture\Dashboard okrs\Datasets\okrs.xlsx"), null, true),
+				    sources_Sheet = Origen{[Item="sources",Kind="Sheet"]}[Data],
+				    #"Encabezados promovidos" = Table.PromoteHeaders(sources_Sheet, [PromoteAllScalars=true]),
+				    #"Tipo cambiado" = Table.TransformColumnTypes(#"Encabezados promovidos",{{"Source_ID", Int64.Type}, {"Source_Name", type text}})
+				in
+				    #"Tipo cambiado"
+
+	annotation PBI_ResultType = Exception
+

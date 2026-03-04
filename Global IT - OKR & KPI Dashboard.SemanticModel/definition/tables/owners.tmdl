@@ -1,0 +1,33 @@
+table owners
+	lineageTag: ceb0ad19-0158-4cd1-98e7-951c5763543e
+
+	column Owner_ID
+		dataType: int64
+		formatString: 0
+		lineageTag: 80bd36e0-f78e-4b49-bac5-a7b379a895ca
+		summarizeBy: none
+		sourceColumn: Owner_ID
+
+		annotation SummarizationSetBy = Automatic
+
+	column Owner_Name
+		dataType: string
+		lineageTag: d14078fa-882a-49b9-aaa2-1a7bc9d887ac
+		summarizeBy: none
+		sourceColumn: Owner_Name
+
+		annotation SummarizationSetBy = Automatic
+
+	partition owners = m
+		mode: import
+		source =
+				let
+				    Origen = Excel.Workbook(File.Contents("C:\Users\mauro\Desktop\Accenture\Dashboard okrs\Datasets\okrs.xlsx"), null, true),
+				    owners_Sheet = Origen{[Item="owners",Kind="Sheet"]}[Data],
+				    #"Encabezados promovidos" = Table.PromoteHeaders(owners_Sheet, [PromoteAllScalars=true]),
+				    #"Tipo cambiado" = Table.TransformColumnTypes(#"Encabezados promovidos",{{"Owner_ID", Int64.Type}, {"Owner_Name", type text}})
+				in
+				    #"Tipo cambiado"
+
+	annotation PBI_ResultType = Exception
+

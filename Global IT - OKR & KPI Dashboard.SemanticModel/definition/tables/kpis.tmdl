@@ -1,0 +1,61 @@
+table kpis
+	lineageTag: 10ee568f-9b11-4192-ae01-ac56e177124d
+
+	column KPI_ID
+		dataType: int64
+		formatString: 0
+		lineageTag: e7b6e705-c523-40aa-b64d-285d65e6644b
+		summarizeBy: none
+		sourceColumn: KPI_ID
+
+		annotation SummarizationSetBy = Automatic
+
+	column Objetive_ID
+		dataType: int64
+		formatString: 0
+		lineageTag: eef8f719-368d-44ea-a6f8-0f4a34315052
+		summarizeBy: none
+		sourceColumn: Objetive_ID
+
+		annotation SummarizationSetBy = Automatic
+
+	column Unit_ID
+		dataType: int64
+		formatString: 0
+		lineageTag: 1c6b9e49-99ae-4b21-bfd8-00ad51ca54d0
+		summarizeBy: none
+		sourceColumn: Unit_ID
+
+		annotation SummarizationSetBy = Automatic
+
+	column KPI_Goal
+		dataType: string
+		lineageTag: efc3bf6e-8248-4abd-81d4-030ac1355554
+		summarizeBy: none
+		sourceColumn: KPI_Goal
+
+		annotation SummarizationSetBy = Automatic
+
+	column Target_Value
+		dataType: double
+		lineageTag: 38d2f00f-267b-4357-989c-7ae6650d558d
+		summarizeBy: sum
+		sourceColumn: Target_Value
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	partition kpis = m
+		mode: import
+		source =
+				let
+				    Origen = Excel.Workbook(File.Contents("C:\Users\mauro\Desktop\Accenture\Dashboard okrs\Datasets\okrs.xlsx"), null, true),
+				    kpis_Sheet = Origen{[Item="kpis",Kind="Sheet"]}[Data],
+				    #"Encabezados promovidos" = Table.PromoteHeaders(kpis_Sheet, [PromoteAllScalars=true]),
+				    #"Tipo cambiado" = Table.TransformColumnTypes(#"Encabezados promovidos",{{"KPI_ID", Int64.Type}, {"Objetive_ID", Int64.Type}, {"Unit_ID", Int64.Type}, {"KPI_Goal", type text}, {"Target_Value", type number}})
+				in
+				    #"Tipo cambiado"
+
+	annotation PBI_ResultType = Table
+

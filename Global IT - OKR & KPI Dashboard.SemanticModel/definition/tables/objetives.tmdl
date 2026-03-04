@@ -1,0 +1,33 @@
+table objetives
+	lineageTag: 089ff212-4bf5-4ce7-baf5-5b636558ecdc
+
+	column Objetive_ID
+		dataType: int64
+		formatString: 0
+		lineageTag: a49c5124-cbe0-44a7-8563-caa04e5f6a92
+		summarizeBy: none
+		sourceColumn: Objetive_ID
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Objetive_Name '
+		dataType: string
+		lineageTag: aab9e4a7-892f-443e-bed8-27ef6de240c4
+		summarizeBy: none
+		sourceColumn: "Objetive_Name "
+
+		annotation SummarizationSetBy = Automatic
+
+	partition objetives = m
+		mode: import
+		source =
+				let
+				    Origen = Excel.Workbook(File.Contents("C:\Users\mauro\Desktop\Accenture\Dashboard okrs\Datasets\okrs.xlsx"), null, true),
+				    objetives_Sheet = Origen{[Item="objetives",Kind="Sheet"]}[Data],
+				    #"Encabezados promovidos" = Table.PromoteHeaders(objetives_Sheet, [PromoteAllScalars=true]),
+				    #"Tipo cambiado" = Table.TransformColumnTypes(#"Encabezados promovidos",{{"Objetive_ID", Int64.Type}, {"Objetive_Name ", type text}})
+				in
+				    #"Tipo cambiado"
+
+	annotation PBI_ResultType = Exception
+
