@@ -4,10 +4,10 @@
   "position": {
     "x": 800.72469804248226,
     "y": 15.412625691676089,
-    "z": 11000,
+    "z": 2000,
     "height": 354.28571428571433,
     "width": 281.42857142857144,
-    "tabOrder": 15000
+    "tabOrder": 5000
   },
   "visualGroup": {
     "displayName": "Filter Panel",

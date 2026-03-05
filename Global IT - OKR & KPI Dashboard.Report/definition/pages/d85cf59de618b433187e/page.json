@@ -3,7 +3,7 @@
   "name": "d85cf59de618b433187e",
   "displayName": "Champions",
   "displayOption": "ActualSize",
-  "height": 1149,
+  "height": 1462,
   "width": 1280,
   "objects": {
     "background": [
@@ -14,7 +14,7 @@
               "name": {
                 "expr": {
                   "Literal": {
-                    "Value": "'CC_Dashboard (3).svg'"
+                    "Value": "'Okrs_Dashboard.svg'"
                   }
                 }
               },
@@ -23,14 +23,14 @@
                   "ResourcePackageItem": {
                     "PackageName": "RegisteredResources",
                     "PackageType": 1,
-                    "ItemName": "CC_Dashboard_(3)8665611209845447.svg"
+                    "ItemName": "Okrs_Dashboard20727319945756184.svg"
                   }
                 }
               },
               "scaling": {
                 "expr": {
                   "Literal": {
-                    "Value": "'Normal'"
+                    "Value": "'Fill'"
                   }
                 }
               }

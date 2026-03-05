@@ -4,10 +4,10 @@
   "position": {
     "x": 596.99286476633324,
     "y": 13.707166935766844,
-    "z": 13000,
+    "z": 4000,
     "height": 304.28571428571428,
     "width": 314.28571428571428,
-    "tabOrder": 16000
+    "tabOrder": 6000
   },
   "visualGroup": {
     "displayName": "Help Panel",
