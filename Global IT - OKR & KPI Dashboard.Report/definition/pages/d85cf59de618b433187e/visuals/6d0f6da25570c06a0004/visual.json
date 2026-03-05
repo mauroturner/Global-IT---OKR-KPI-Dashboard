@@ -1,0 +1,73 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.6.0/schema.json",
+  "name": "6d0f6da25570c06a0004",
+  "position": {
+    "x": 500,
+    "y": 753,
+    "z": 13003,
+    "height": 226,
+    "width": 780
+  },
+  "visual": {
+    "visualType": "tableEx",
+    "query": {
+      "queryState": {
+        "Values": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "kpis"
+                    }
+                  },
+                  "Property": "KPI_ID"
+                }
+              },
+              "queryRef": "kpis.KPI_ID",
+              "nativeQueryRef": "KPI_ID"
+            },
+            {
+              "field": {
+                "Aggregation": {
+                  "Expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "Results"
+                        }
+                      },
+                      "Property": "Actual_Value"
+                    }
+                  },
+                  "Function": 0
+                }
+              },
+              "queryRef": "Sum(Results.Actual_Value)",
+              "nativeQueryRef": "Suma de Actual_Value"
+            }
+          ]
+        }
+      },
+      "sortDefinition": {
+        "sort": [
+          {
+            "field": {
+              "Column": {
+                "Expression": {
+                  "SourceRef": {
+                    "Entity": "kpis"
+                  }
+                },
+                "Property": "KPI_ID"
+              }
+            },
+            "direction": "Ascending"
+          }
+        ]
+      }
+    },
+    "drillFilterOtherVisuals": true
+  }
+}

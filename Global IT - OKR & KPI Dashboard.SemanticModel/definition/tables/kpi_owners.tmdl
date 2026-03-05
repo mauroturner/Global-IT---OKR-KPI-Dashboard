@@ -30,5 +30,7 @@ table kpi_owners
 				in
 				    #"Tipo cambiado"
 
-	annotation PBI_ResultType = Exception
+	annotation PBI_ResultType = Table
+
+	annotation PBI_NavigationStepName = Navegación
 

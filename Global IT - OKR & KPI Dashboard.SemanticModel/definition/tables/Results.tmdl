@@ -1,18 +1,20 @@
 table Results
 	lineageTag: ffa596c6-aec4-4c63-912a-804618788065
 
-	column Result_ID
-		dataType: int64
+	measure Actual_Status = SUM('results'[Actual_Value])
 		formatString: 0
+		lineageTag: f92170d1-51f9-4454-9966-172af2ec516a
+
+	column Result_ID
+		dataType: string
 		lineageTag: 7eb8324c-6034-4577-9b50-bbf300eab304
-		summarizeBy: count
+		summarizeBy: none
 		sourceColumn: Result_ID
 
 		annotation SummarizationSetBy = Automatic
 
 	column KPI_ID
-		dataType: int64
-		formatString: 0
+		dataType: string
 		lineageTag: 56f8413a-8610-4945-9887-610cc5c9d7e7
 		summarizeBy: none
 		sourceColumn: KPI_ID
@@ -41,8 +43,7 @@ table Results
 		annotation PBI_FormatHint = {"isGeneralNumber":true}
 
 	column Is_Beginning_Number
-		dataType: boolean
-		formatString: """TRUE"";""TRUE"";""FALSE"""
+		dataType: string
 		lineageTag: d08f25ab-8741-49d5-ad71-1192d264e559
 		summarizeBy: none
 		sourceColumn: Is_Beginning_Number
@@ -56,9 +57,15 @@ table Results
 				    Origen = Excel.Workbook(File.Contents("C:\Users\mauro\Desktop\Accenture\Dashboard okrs\Datasets\okrs.xlsx"), null, true),
 				    Results_Sheet = Origen{[Item="Results",Kind="Sheet"]}[Data],
 				    #"Encabezados promovidos" = Table.PromoteHeaders(Results_Sheet, [PromoteAllScalars=true]),
-				    #"Tipo cambiado" = Table.TransformColumnTypes(#"Encabezados promovidos",{{"Result_ID", Int64.Type}, {"KPI_ID", Int64.Type}, {"Date", type date}, {"Actual_Value", type number}, {"Is_Beginning_Number", type logical}})
+				    #"Otras columnas quitadas" = Table.SelectColumns(#"Encabezados promovidos",{"Result_ID", "KPI_ID", "Date", "Actual_Value", "Is_Beginning_Number"}),
+				    #"Tipo cambiado con configuración regional1" = Table.TransformColumnTypes(#"Otras columnas quitadas", {{"Date", type date}}, "en-US"),
+				    #"Filas filtradas" = Table.SelectRows(#"Tipo cambiado con configuración regional1", each ([Result_ID] <> null)),
+				    #"Filas en blanco eliminadas" = Table.SelectRows(#"Filas filtradas", each not List.IsEmpty(List.RemoveMatchingItems(Record.FieldValues(_), {"", null}))),
+				    #"Tipo cambiado con configuración regional" = Table.TransformColumnTypes(#"Filas en blanco eliminadas", {{"Actual_Value", type number}}, "es-AR")
 				in
-				    #"Tipo cambiado"
+				    #"Tipo cambiado con configuración regional"
 
-	annotation PBI_ResultType = Exception
+	annotation PBI_ResultType = Table
+
+	annotation PBI_NavigationStepName = Navegación
 

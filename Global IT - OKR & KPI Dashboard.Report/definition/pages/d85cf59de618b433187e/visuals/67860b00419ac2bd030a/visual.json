@@ -1,0 +1,158 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.6.0/schema.json",
+  "name": "67860b00419ac2bd030a",
+  "position": {
+    "x": 34,
+    "y": 340,
+    "z": 13001,
+    "height": 397,
+    "width": 1196,
+    "tabOrder": 11001
+  },
+  "visual": {
+    "visualType": "pivotTable",
+    "query": {
+      "queryState": {
+        "Columns": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Calendar"
+                    }
+                  },
+                  "Property": "Month-Year"
+                }
+              },
+              "queryRef": "Calendar.Month-Year",
+              "nativeQueryRef": "Month-Year",
+              "active": true
+            }
+          ]
+        },
+        "Rows": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "kpis"
+                    }
+                  },
+                  "Property": "KPI_Goal"
+                }
+              },
+              "queryRef": "kpis.KPI_Goal",
+              "nativeQueryRef": "KPI_Goal",
+              "active": true
+            }
+          ]
+        },
+        "Values": {
+          "projections": [
+            {
+              "field": {
+                "Aggregation": {
+                  "Expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "Results"
+                        }
+                      },
+                      "Property": "Actual_Value"
+                    }
+                  },
+                  "Function": 3
+                }
+              },
+              "queryRef": "Min(Results.Actual_Value)",
+              "nativeQueryRef": "Primera fecha: Actual_Value"
+            }
+          ]
+        }
+      },
+      "sortDefinition": {
+        "sort": [
+          {
+            "field": {
+              "Column": {
+                "Expression": {
+                  "SourceRef": {
+                    "Entity": "kpis"
+                  }
+                },
+                "Property": "KPI_Goal"
+              }
+            },
+            "direction": "Ascending"
+          }
+        ]
+      }
+    },
+    "expansionStates": [
+      {
+        "roles": [
+          "Rows"
+        ],
+        "levels": [
+          {
+            "queryRefs": [
+              "kpis.KPI_Goal"
+            ],
+            "isCollapsed": true,
+            "identityKeys": [
+              {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "kpis"
+                    }
+                  },
+                  "Property": "KPI_Goal"
+                }
+              }
+            ],
+            "isPinned": true
+          }
+        ],
+        "root": {
+          "children": [
+            {
+              "identityValues": [
+                {
+                  "Literal": {
+                    "Value": "'Increase the number of Global IT employees with AI-related Skills (in Workday) by 20%'"
+                  }
+                }
+              ],
+              "isToggled": true
+            }
+          ]
+        }
+      }
+    ],
+    "objects": {
+      "columnWidth": [
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "489D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "kpis.KPI_Goal"
+          }
+        }
+      ]
+    },
+    "drillFilterOtherVisuals": true
+  }
+}
