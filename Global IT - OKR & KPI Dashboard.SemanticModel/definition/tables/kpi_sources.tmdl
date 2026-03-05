@@ -23,7 +23,7 @@ table kpi_sources
 		mode: import
 		source =
 				let
-				    Origen = Excel.Workbook(File.Contents("C:\Users\mauro\Desktop\Accenture\Dashboard okrs\Datasets\okrs.xlsx"), null, true),
+				    Origen = Excel.Workbook(File.Contents("C:\Users\mauro.turner\Proyectos\Dashboards\Global-IT---OKR-KPI-Dashboard\Datasets\okrs.xlsx"), null, true),
 				    kpi_sources_Sheet = Origen{[Item="kpi_sources",Kind="Sheet"]}[Data],
 				    #"Encabezados promovidos" = Table.PromoteHeaders(kpi_sources_Sheet, [PromoteAllScalars=true]),
 				    #"Tipo cambiado" = Table.TransformColumnTypes(#"Encabezados promovidos",{{"KPI_ID", Int64.Type}, {"Source_ID", Int64.Type}})

@@ -40,7 +40,7 @@
           "expanded": {
             "expr": {
               "Literal": {
-                "Value": "true"
+                "Value": "false"
               }
             }
           }
@@ -48,6 +48,9 @@
       }
     ]
   },
+  "publicCustomVisuals": [
+    "payPalKPIDonutChart55A431AB15A540ED924ACD72ED8D259F"
+  ],
   "resourcePackages": [
     {
       "name": "SharedResources",
@@ -75,8 +78,8 @@
           "type": "Image"
         },
         {
-          "name": "Okrs_Dashboard20727319945756184.svg",
-          "path": "Okrs_Dashboard20727319945756184.svg",
+          "name": "Okrs_Dashboard5701505726211393.svg",
+          "path": "Okrs_Dashboard5701505726211393.svg",
           "type": "Image"
         }
       ]

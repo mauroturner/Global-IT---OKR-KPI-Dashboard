@@ -23,14 +23,14 @@ table kpi_owners
 		mode: import
 		source =
 				let
-				    Origen = Excel.Workbook(File.Contents("C:\Users\mauro\Desktop\Accenture\Dashboard okrs\Datasets\okrs.xlsx"), null, true),
+				    Origen = Excel.Workbook(File.Contents("C:\Users\mauro.turner\Proyectos\Dashboards\Global-IT---OKR-KPI-Dashboard\Datasets\okrs.xlsx"), null, true),
 				    kpi_owners_Sheet = Origen{[Item="kpi_owners",Kind="Sheet"]}[Data],
 				    #"Encabezados promovidos" = Table.PromoteHeaders(kpi_owners_Sheet, [PromoteAllScalars=true]),
 				    #"Tipo cambiado" = Table.TransformColumnTypes(#"Encabezados promovidos",{{"KPI_ID", Int64.Type}, {"Owner_ID", Int64.Type}})
 				in
 				    #"Tipo cambiado"
 
-	annotation PBI_ResultType = Table
+	annotation PBI_ResultType = Exception
 
 	annotation PBI_NavigationStepName = Navegación
 

@@ -1,13 +1,13 @@
 {
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.6.0/schema.json",
-  "name": "7d7bd2f1b4bd0dd510a7",
+  "name": "a7531e723eda3be05c43",
   "position": {
-    "x": 38.18181818181818,
-    "y": 217.27272727272725,
-    "z": 6000,
-    "height": 222.72727272727272,
-    "width": 402.72727272727269,
-    "tabOrder": 4000
+    "x": 872.5,
+    "y": 217.5,
+    "z": 6002,
+    "height": 222.5,
+    "width": 386.25,
+    "tabOrder": 6002
   },
   "visual": {
     "visualType": "clusteredBarChart",
@@ -515,7 +515,7 @@
                     [
                       {
                         "Literal": {
-                          "Value": "'Increase the number of Global IT employees with AI-related Skills (in Workday) by 20%'"
+                          "Value": "'Host 24+ AI-related Learning Events including hackathons'"
                         }
                       }
                     ]
@@ -524,29 +524,17 @@
               }
             }
           ]
+        },
+        "objects": {
+          "general": [
+            {
+              "properties": {}
+            }
+          ]
         }
       },
       {
-        "name": "7e7bdcf0139858d3dbb6",
-        "field": {
-          "Aggregation": {
-            "Expression": {
-              "Column": {
-                "Expression": {
-                  "SourceRef": {
-                    "Entity": "kpis"
-                  }
-                },
-                "Property": "Adjusted_Target_Value"
-              }
-            },
-            "Function": 0
-          }
-        },
-        "type": "Advanced"
-      },
-      {
-        "name": "97335d5860c208da36ce",
+        "name": "b105fb13a1d38dc9a10d",
         "field": {
           "Aggregation": {
             "Expression": {
@@ -557,6 +545,25 @@
                   }
                 },
                 "Property": "Actual_Value"
+              }
+            },
+            "Function": 0
+          }
+        },
+        "type": "Advanced"
+      },
+      {
+        "name": "4c1d330766c4c7ee0875",
+        "field": {
+          "Aggregation": {
+            "Expression": {
+              "Column": {
+                "Expression": {
+                  "SourceRef": {
+                    "Entity": "kpis"
+                  }
+                },
+                "Property": "Adjusted_Target_Value"
               }
             },
             "Function": 0

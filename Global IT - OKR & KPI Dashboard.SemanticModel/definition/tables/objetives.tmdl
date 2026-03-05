@@ -22,7 +22,7 @@ table objetives
 		mode: import
 		source =
 				let
-				    Origen = Excel.Workbook(File.Contents("C:\Users\mauro\Desktop\Accenture\Dashboard okrs\Datasets\okrs.xlsx"), null, true),
+				    Origen = Excel.Workbook(File.Contents("C:\Users\mauro.turner\Proyectos\Dashboards\Global-IT---OKR-KPI-Dashboard\Datasets\okrs.xlsx"), null, true),
 				    objetives_Sheet = Origen{[Item="objetives",Kind="Sheet"]}[Data],
 				    #"Encabezados promovidos" = Table.PromoteHeaders(objetives_Sheet, [PromoteAllScalars=true]),
 				    #"Tipo cambiado" = Table.TransformColumnTypes(#"Encabezados promovidos",{{"Objetive_ID", Int64.Type}, {"Objetive_Name ", type text}})

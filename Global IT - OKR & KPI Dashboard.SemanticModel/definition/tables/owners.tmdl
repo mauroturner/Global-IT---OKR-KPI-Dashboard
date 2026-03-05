@@ -22,7 +22,7 @@ table owners
 		mode: import
 		source =
 				let
-				    Origen = Excel.Workbook(File.Contents("C:\Users\mauro\Desktop\Accenture\Dashboard okrs\Datasets\okrs.xlsx"), null, true),
+				    Origen = Excel.Workbook(File.Contents("C:\Users\mauro.turner\Proyectos\Dashboards\Global-IT---OKR-KPI-Dashboard\Datasets\okrs.xlsx"), null, true),
 				    owners_Sheet = Origen{[Item="owners",Kind="Sheet"]}[Data],
 				    #"Encabezados promovidos" = Table.PromoteHeaders(owners_Sheet, [PromoteAllScalars=true]),
 				    #"Tipo cambiado" = Table.TransformColumnTypes(#"Encabezados promovidos",{{"Owner_ID", Int64.Type}, {"Owner_Name", type text}})

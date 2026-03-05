@@ -1,13 +1,13 @@
 {
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.6.0/schema.json",
-  "name": "7d7bd2f1b4bd0dd510a7",
+  "name": "8654ec8d038dd33c8022",
   "position": {
-    "x": 38.18181818181818,
-    "y": 217.27272727272725,
-    "z": 6000,
-    "height": 222.72727272727272,
-    "width": 402.72727272727269,
-    "tabOrder": 4000
+    "x": 967.5,
+    "y": 937.5,
+    "z": 6009,
+    "height": 222.5,
+    "width": 276.25,
+    "tabOrder": 6009
   },
   "visual": {
     "visualType": "clusteredBarChart",
@@ -515,7 +515,7 @@
                     [
                       {
                         "Literal": {
-                          "Value": "'Increase the number of Global IT employees with AI-related Skills (in Workday) by 20%'"
+                          "Value": "'Provide Team Leads with foundation leadership training, including discussing progress with team members'"
                         }
                       }
                     ]
@@ -524,29 +524,17 @@
               }
             }
           ]
+        },
+        "objects": {
+          "general": [
+            {
+              "properties": {}
+            }
+          ]
         }
       },
       {
-        "name": "7e7bdcf0139858d3dbb6",
-        "field": {
-          "Aggregation": {
-            "Expression": {
-              "Column": {
-                "Expression": {
-                  "SourceRef": {
-                    "Entity": "kpis"
-                  }
-                },
-                "Property": "Adjusted_Target_Value"
-              }
-            },
-            "Function": 0
-          }
-        },
-        "type": "Advanced"
-      },
-      {
-        "name": "97335d5860c208da36ce",
+        "name": "31829bd297dc3810e0a2",
         "field": {
           "Aggregation": {
             "Expression": {
@@ -557,6 +545,25 @@
                   }
                 },
                 "Property": "Actual_Value"
+              }
+            },
+            "Function": 0
+          }
+        },
+        "type": "Advanced"
+      },
+      {
+        "name": "6ccbeebee1913409508d",
+        "field": {
+          "Aggregation": {
+            "Expression": {
+              "Column": {
+                "Expression": {
+                  "SourceRef": {
+                    "Entity": "kpis"
+                  }
+                },
+                "Property": "Adjusted_Target_Value"
               }
             },
             "Function": 0

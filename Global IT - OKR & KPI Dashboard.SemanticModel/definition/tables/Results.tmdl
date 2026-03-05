@@ -86,7 +86,7 @@ table Results
 		mode: import
 		source =
 				let
-				    Origen = Excel.Workbook(File.Contents("C:\Users\mauro\Desktop\Accenture\Dashboard okrs\Datasets\okrs.xlsx"), null, true),
+				    Origen = Excel.Workbook(File.Contents("C:\Users\mauro.turner\Proyectos\Dashboards\Global-IT---OKR-KPI-Dashboard\Datasets\okrs.xlsx"), null, true),
 				    Results_Sheet = Origen{[Item="Results",Kind="Sheet"]}[Data],
 				    #"Encabezados promovidos" = Table.PromoteHeaders(Results_Sheet, [PromoteAllScalars=true]),
 				    #"Otras columnas quitadas" = Table.SelectColumns(#"Encabezados promovidos",{"Result_ID", "KPI_ID", "Date", "Actual_Value", "Is_Beginning_Number"}),
