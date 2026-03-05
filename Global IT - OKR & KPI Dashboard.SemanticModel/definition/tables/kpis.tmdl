@@ -46,6 +46,39 @@ table kpis
 
 		annotation PBI_FormatHint = {"isGeneralNumber":true}
 
+	column Adjusted_Target_Value = ```
+			
+			-- 1. Store strategic metadata for the current row context
+			VAR varCurrentKpi = 'kpis'[KPI_ID]
+			VAR varTargetValue = 'kpis'[Target_Value]
+			VAR varUnitName = RELATED('units'[Unit_Name])
+			
+			-- 2. Retrieve the baseline (Beginning Number) from the transactional results
+			-- Ensures a precise lookup of the November 2025 starting point
+			VAR varBaselineValue = 
+			    CALCULATE(
+			        MAX('results'[Actual_Value]),
+			        'results'[KPI_ID] = varCurrentKpi,
+			        'results'[Is_Beginning_Number] = TRUE()
+			    )
+			
+			-- 3. Logic: Apply relative growth for percentages or fixed targets for counts
+			RETURN
+			IF(
+			    varUnitName = "Percentage",
+			    -- Relative growth formula: Baseline * (1 + Growth Rate)
+			    varBaselineValue * (1 + varTargetValue),
+			    -- Absolute target: Maintain original value for counts or discrete metrics
+			    varTargetValue
+			)
+			```
+		lineageTag: 363c5946-f0da-4cc6-91f1-e9b16efb1694
+		summarizeBy: sum
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
 	partition kpis = m
 		mode: import
 		source =

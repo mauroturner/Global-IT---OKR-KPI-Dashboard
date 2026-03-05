@@ -5,16 +5,47 @@ table Results
 		formatString: 0
 		lineageTag: f92170d1-51f9-4454-9966-172af2ec516a
 
+	measure Calculated_Target_Value = ```
+			
+			// 1. Identify the unit for the current KPI context
+			VAR _UnitName = SELECTEDVALUE(units[Unit_Name])
+			
+			// 2. Get the raw target value from the KPIs table
+			VAR _Target = SELECTEDVALUE(kpis[Target_Value])
+			
+			// 3. Retrieve the Actual_Value that serves as the baseline (Beginning Number)
+			// We use CALCULATE to filter the Results table specifically for the starting point
+			VAR _StartingActual = 
+			    CALCULATE(
+			        MAX(Results[Actual_Value]), 
+			        Results[Is_Beginning_Number] = TRUE
+			    )
+			
+			// 4. Final Logic:
+			// If Unit is "Percentage", add the Target to the Starting Value.
+			// Otherwise, simply return the Target Value.
+			RETURN
+			IF(
+			    _UnitName = "Percentage",
+			    _StartingActual + _Target,
+			    _Target
+			)
+			```
+		formatString: 0
+		lineageTag: a33060ba-5c27-4763-ade5-38bcc11a29f0
+
 	column Result_ID
-		dataType: string
+		dataType: int64
+		formatString: 0
 		lineageTag: 7eb8324c-6034-4577-9b50-bbf300eab304
-		summarizeBy: none
+		summarizeBy: count
 		sourceColumn: Result_ID
 
 		annotation SummarizationSetBy = Automatic
 
 	column KPI_ID
-		dataType: string
+		dataType: int64
+		formatString: 0
 		lineageTag: 56f8413a-8610-4945-9887-610cc5c9d7e7
 		summarizeBy: none
 		sourceColumn: KPI_ID
@@ -43,7 +74,8 @@ table Results
 		annotation PBI_FormatHint = {"isGeneralNumber":true}
 
 	column Is_Beginning_Number
-		dataType: string
+		dataType: boolean
+		formatString: """TRUE"";""TRUE"";""FALSE"""
 		lineageTag: d08f25ab-8741-49d5-ad71-1192d264e559
 		summarizeBy: none
 		sourceColumn: Is_Beginning_Number
@@ -61,9 +93,10 @@ table Results
 				    #"Tipo cambiado con configuración regional1" = Table.TransformColumnTypes(#"Otras columnas quitadas", {{"Date", type date}}, "en-US"),
 				    #"Filas filtradas" = Table.SelectRows(#"Tipo cambiado con configuración regional1", each ([Result_ID] <> null)),
 				    #"Filas en blanco eliminadas" = Table.SelectRows(#"Filas filtradas", each not List.IsEmpty(List.RemoveMatchingItems(Record.FieldValues(_), {"", null}))),
-				    #"Tipo cambiado con configuración regional" = Table.TransformColumnTypes(#"Filas en blanco eliminadas", {{"Actual_Value", type number}}, "es-AR")
+				    #"Tipo cambiado con configuración regional" = Table.TransformColumnTypes(#"Filas en blanco eliminadas", {{"Actual_Value", type number}}, "es-AR"),
+				    #"Tipo cambiado" = Table.TransformColumnTypes(#"Tipo cambiado con configuración regional",{{"Is_Beginning_Number", type logical}, {"Result_ID", Int64.Type}, {"KPI_ID", Int64.Type}})
 				in
-				    #"Tipo cambiado con configuración regional"
+				    #"Tipo cambiado"
 
 	annotation PBI_ResultType = Table
 
