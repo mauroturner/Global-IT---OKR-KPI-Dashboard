@@ -1,7 +1,7 @@
 {
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/page/2.0.0/schema.json",
   "name": "d85cf59de618b433187e",
-  "displayName": "Champions",
+  "displayName": "Okrs",
   "displayOption": "ActualSize",
   "height": 1462,
   "width": 1280,
@@ -14,7 +14,7 @@
               "name": {
                 "expr": {
                   "Literal": {
-                    "Value": "'Okrs_Dashboard.svg'"
+                    "Value": "'Okrs_Dashboard (2).svg'"
                   }
                 }
               },
@@ -23,7 +23,7 @@
                   "ResourcePackageItem": {
                     "PackageName": "RegisteredResources",
                     "PackageType": 1,
-                    "ItemName": "Okrs_Dashboard5701505726211393.svg"
+                    "ItemName": "Okrs_Dashboard_(2)5936627493641766.svg"
                   }
                 }
               },

@@ -4,10 +4,10 @@
   "position": {
     "x": 872.5,
     "y": 217.5,
-    "z": 6002,
+    "z": 4000,
     "height": 222.5,
     "width": 386.25,
-    "tabOrder": 6002
+    "tabOrder": 4000
   },
   "visual": {
     "visualType": "clusteredBarChart",
@@ -532,44 +532,6 @@
             }
           ]
         }
-      },
-      {
-        "name": "b105fb13a1d38dc9a10d",
-        "field": {
-          "Aggregation": {
-            "Expression": {
-              "Column": {
-                "Expression": {
-                  "SourceRef": {
-                    "Entity": "Results"
-                  }
-                },
-                "Property": "Actual_Value"
-              }
-            },
-            "Function": 0
-          }
-        },
-        "type": "Advanced"
-      },
-      {
-        "name": "4c1d330766c4c7ee0875",
-        "field": {
-          "Aggregation": {
-            "Expression": {
-              "Column": {
-                "Expression": {
-                  "SourceRef": {
-                    "Entity": "kpis"
-                  }
-                },
-                "Property": "Adjusted_Target_Value"
-              }
-            },
-            "Function": 0
-          }
-        },
-        "type": "Advanced"
       }
     ]
   }

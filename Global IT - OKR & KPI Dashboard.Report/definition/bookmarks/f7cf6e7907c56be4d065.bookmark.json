@@ -11,12 +11,6 @@
     "sections": {
       "d85cf59de618b433187e": {
         "visualContainers": {
-          "ac61ee7268e51a203928": {
-            "singleVisual": {
-              "visualType": "actionButton",
-              "objects": {}
-            }
-          },
           "3438d9f996eb04705e11": {
             "singleVisual": {
               "visualType": "shape",
@@ -26,18 +20,6 @@
           "b5230978a741dea3337b": {
             "singleVisual": {
               "visualType": "image",
-              "objects": {}
-            }
-          },
-          "06d379201694a84522e6": {
-            "singleVisual": {
-              "visualType": "actionButton",
-              "objects": {}
-            }
-          },
-          "97a8aa30ca8d5e3c4559": {
-            "singleVisual": {
-              "visualType": "actionButton",
               "objects": {}
             }
           },

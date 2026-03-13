@@ -1,6 +1,9 @@
 table kpis
 	lineageTag: 10ee568f-9b11-4192-ae01-ac56e177124d
 
+	measure a = "50%"
+		lineageTag: b9bed547-93ca-4516-9887-82f6cef3ed62
+
 	column KPI_ID
 		dataType: int64
 		formatString: 0
@@ -62,15 +65,19 @@ table kpis
 			        'results'[Is_Beginning_Number] = TRUE()
 			    )
 			
-			-- 3. Logic: Apply relative growth for percentages or fixed targets for counts
+			-- 3. Calculation Logic: Determine raw target based on unit type
+			VAR varRawTarget = 
+			    IF(
+			        varUnitName = "Percentage",
+			        -- Relative growth formula: Baseline * (1 + Growth Rate)
+			        varBaselineValue * (1 + varTargetValue),
+			        -- Absolute target: Maintain original value for counts or discrete metrics
+			        varTargetValue
+			    )
+			
+			-- 4. Final Output: Round result to the nearest integer
 			RETURN
-			IF(
-			    varUnitName = "Percentage",
-			    -- Relative growth formula: Baseline * (1 + Growth Rate)
-			    varBaselineValue * (1 + varTargetValue),
-			    -- Absolute target: Maintain original value for counts or discrete metrics
-			    varTargetValue
-			)
+			ROUND(varRawTarget, 0)
 			```
 		lineageTag: 363c5946-f0da-4cc6-91f1-e9b16efb1694
 		summarizeBy: sum

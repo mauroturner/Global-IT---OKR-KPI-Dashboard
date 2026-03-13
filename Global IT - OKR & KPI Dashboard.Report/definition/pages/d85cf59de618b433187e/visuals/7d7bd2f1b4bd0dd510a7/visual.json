@@ -4,10 +4,10 @@
   "position": {
     "x": 38.18181818181818,
     "y": 217.27272727272725,
-    "z": 6000,
+    "z": 2000,
     "height": 222.72727272727272,
     "width": 402.72727272727269,
-    "tabOrder": 4000
+    "tabOrder": 0
   },
   "visual": {
     "visualType": "clusteredBarChart",
@@ -36,23 +36,17 @@
           "projections": [
             {
               "field": {
-                "Aggregation": {
+                "Measure": {
                   "Expression": {
-                    "Column": {
-                      "Expression": {
-                        "SourceRef": {
-                          "Entity": "Results"
-                        }
-                      },
-                      "Property": "Actual_Value"
+                    "SourceRef": {
+                      "Entity": "Results"
                     }
                   },
-                  "Function": 0
+                  "Property": "Actual_Status"
                 }
               },
-              "queryRef": "Sum(Results.Actual_Value)",
-              "nativeQueryRef": "Actual",
-              "displayName": "Actual"
+              "queryRef": "Results.Actual_Status",
+              "nativeQueryRef": "Actual_Status"
             },
             {
               "field": {
@@ -81,18 +75,13 @@
         "sort": [
           {
             "field": {
-              "Aggregation": {
+              "Measure": {
                 "Expression": {
-                  "Column": {
-                    "Expression": {
-                      "SourceRef": {
-                        "Entity": "Results"
-                      }
-                    },
-                    "Property": "Actual_Value"
+                  "SourceRef": {
+                    "Entity": "Results"
                   }
                 },
-                "Function": 0
+                "Property": "Actual_Status"
               }
             },
             "direction": "Descending"
@@ -335,25 +324,6 @@
                 "color": {
                   "expr": {
                     "ThemeDataColor": {
-                      "ColorId": 3,
-                      "Percent": 0
-                    }
-                  }
-                }
-              }
-            }
-          },
-          "selector": {
-            "metadata": "Sum(Results.Actual_Value)"
-          }
-        },
-        {
-          "properties": {
-            "fill": {
-              "solid": {
-                "color": {
-                  "expr": {
-                    "ThemeDataColor": {
                       "ColorId": 2,
                       "Percent": 0
                     }
@@ -371,6 +341,25 @@
           },
           "selector": {
             "metadata": "Sum(kpis.Adjusted_Target_Value)"
+          }
+        },
+        {
+          "properties": {
+            "fill": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "ThemeDataColor": {
+                      "ColorId": 3,
+                      "Percent": 0
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "Results.Actual_Status"
           }
         }
       ],
@@ -527,7 +516,7 @@
         }
       },
       {
-        "name": "7e7bdcf0139858d3dbb6",
+        "name": "3c4ab216c580480c60ae",
         "field": {
           "Aggregation": {
             "Expression": {
@@ -546,20 +535,15 @@
         "type": "Advanced"
       },
       {
-        "name": "97335d5860c208da36ce",
+        "name": "8c8aacdaacd5dacc1293",
         "field": {
-          "Aggregation": {
+          "Measure": {
             "Expression": {
-              "Column": {
-                "Expression": {
-                  "SourceRef": {
-                    "Entity": "Results"
-                  }
-                },
-                "Property": "Actual_Value"
+              "SourceRef": {
+                "Entity": "Results"
               }
             },
-            "Function": 0
+            "Property": "Actual_Status"
           }
         },
         "type": "Advanced"

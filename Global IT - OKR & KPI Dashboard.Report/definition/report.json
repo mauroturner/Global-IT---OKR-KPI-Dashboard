@@ -48,9 +48,6 @@
       }
     ]
   },
-  "publicCustomVisuals": [
-    "payPalKPIDonutChart55A431AB15A540ED924ACD72ED8D259F"
-  ],
   "resourcePackages": [
     {
       "name": "SharedResources",
@@ -78,8 +75,8 @@
           "type": "Image"
         },
         {
-          "name": "Okrs_Dashboard5701505726211393.svg",
-          "path": "Okrs_Dashboard5701505726211393.svg",
+          "name": "Okrs_Dashboard_(2)5936627493641766.svg",
+          "path": "Okrs_Dashboard_(2)5936627493641766.svg",
           "type": "Image"
         }
       ]
