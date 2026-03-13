@@ -50,21 +50,16 @@
             },
             {
               "field": {
-                "Aggregation": {
+                "Measure": {
                   "Expression": {
-                    "Column": {
-                      "Expression": {
-                        "SourceRef": {
-                          "Entity": "kpis"
-                        }
-                      },
-                      "Property": "Adjusted_Target_Value"
+                    "SourceRef": {
+                      "Entity": "kpis"
                     }
                   },
-                  "Function": 0
+                  "Property": "Adjusted_Target_Value"
                 }
               },
-              "queryRef": "Sum(kpis.Adjusted_Target_Value)",
+              "queryRef": "kpis.Adjusted_Target_Value",
               "nativeQueryRef": "Planned",
               "displayName": "Planned"
             }
@@ -248,7 +243,7 @@
             "valueCustomFormatString": {
               "expr": {
                 "Literal": {
-                  "Value": "'%#0.'"
+                  "Value": "'0%'"
                 }
               }
             }
@@ -331,32 +326,6 @@
         }
       ],
       "dataPoint": [
-        {
-          "properties": {
-            "fill": {
-              "solid": {
-                "color": {
-                  "expr": {
-                    "ThemeDataColor": {
-                      "ColorId": 2,
-                      "Percent": 0
-                    }
-                  }
-                }
-              }
-            },
-            "fillTransparency": {
-              "expr": {
-                "Literal": {
-                  "Value": "55D"
-                }
-              }
-            }
-          },
-          "selector": {
-            "metadata": "Sum(kpis.Adjusted_Target_Value)"
-          }
-        },
         {
           "properties": {
             "fill": {
@@ -535,6 +504,20 @@
             }
           ]
         }
+      },
+      {
+        "name": "36d54fa1076227e4b8b6",
+        "field": {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Results"
+              }
+            },
+            "Property": "Actual_Status"
+          }
+        },
+        "type": "Advanced"
       }
     ]
   }

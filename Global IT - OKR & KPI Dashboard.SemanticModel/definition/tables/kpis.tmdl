@@ -4,6 +4,49 @@ table kpis
 	measure a = "50%"
 		lineageTag: b9bed547-93ca-4516-9887-82f6cef3ed62
 
+	measure Adjusted_Target_Value = ```
+			
+			-- 1. Store strategic metadata for the current visual context
+			-- Reading directly from the flattened 'kpis' dimension table
+			VAR varCurrentKpi = MAX('kpis'[KPI_ID])
+			VAR varTargetValue = MAX('kpis'[Target_Value])
+			VAR varTargetUnit = MAX('kpis'[Target_Unit]) 
+			VAR varActualUnit = MAX('kpis'[Actual_Unit]) 
+			
+			-- 2. Retrieve the baseline (Beginning Number) from the transactional results
+			-- This isolates the November 2025 starting point for the specific KPI
+			VAR varBaselineValue = 
+			    CALCULATE(
+			        MAX('results'[Actual_Value]),
+			        'results'[KPI_ID] = varCurrentKpi,
+			        'results'[Is_Beginning_Number] = TRUE()
+			    )
+			
+			-- 3. Calculation Logic: Evaluate Target vs Actual unit alignment
+			VAR varAdjustedTarget = 
+			    IF(
+			        varTargetUnit = "Percentage" && varActualUnit = "Count",
+			        -- Scenario A: Relative Growth (e.g., Target is 10% growth over a baseline of 1000)
+			        -- Formula: Baseline * (1 + Target Rate)
+			        varBaselineValue * (1 + varTargetValue),
+			        
+			        -- Scenario B: Absolute Target (Matching units: % vs % OR Count vs Count)
+			        -- Formula: Return the exact target value defined by leadership
+			        varTargetValue
+			    )
+			
+			-- 4. Final Output: Apply rounding ONLY if the actual tracked metric is a Count (Integer)
+			RETURN
+			    IF(
+			        varActualUnit = "Count",
+			        ROUND(varAdjustedTarget, 0),
+			        varAdjustedTarget
+			    )
+			```
+		lineageTag: 222c85be-a559-4e40-bcc8-c0a760acfd00
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
 	column KPI_ID
 		dataType: int64
 		formatString: 0
@@ -19,15 +62,6 @@ table kpis
 		lineageTag: eef8f719-368d-44ea-a6f8-0f4a34315052
 		summarizeBy: none
 		sourceColumn: Objetive_ID
-
-		annotation SummarizationSetBy = Automatic
-
-	column Unit_ID
-		dataType: int64
-		formatString: 0
-		lineageTag: 1c6b9e49-99ae-4b21-bfd8-00ad51ca54d0
-		summarizeBy: none
-		sourceColumn: Unit_ID
 
 		annotation SummarizationSetBy = Automatic
 
@@ -49,42 +83,21 @@ table kpis
 
 		annotation PBI_FormatHint = {"isGeneralNumber":true}
 
-	column Adjusted_Target_Value = ```
-			
-			-- 1. Store strategic metadata for the current row context
-			VAR varCurrentKpi = 'kpis'[KPI_ID]
-			VAR varTargetValue = 'kpis'[Target_Value]
-			VAR varUnitName = RELATED('units'[Unit_Name])
-			
-			-- 2. Retrieve the baseline (Beginning Number) from the transactional results
-			-- Ensures a precise lookup of the November 2025 starting point
-			VAR varBaselineValue = 
-			    CALCULATE(
-			        MAX('results'[Actual_Value]),
-			        'results'[KPI_ID] = varCurrentKpi,
-			        'results'[Is_Beginning_Number] = TRUE()
-			    )
-			
-			-- 3. Calculation Logic: Determine raw target based on unit type
-			VAR varRawTarget = 
-			    IF(
-			        varUnitName = "Percentage",
-			        -- Relative growth formula: Baseline * (1 + Growth Rate)
-			        varBaselineValue * (1 + varTargetValue),
-			        -- Absolute target: Maintain original value for counts or discrete metrics
-			        varTargetValue
-			    )
-			
-			-- 4. Final Output: Round result to the nearest integer
-			RETURN
-			ROUND(varRawTarget, 0)
-			```
-		lineageTag: 363c5946-f0da-4cc6-91f1-e9b16efb1694
-		summarizeBy: sum
+	column Target_Unit
+		dataType: string
+		lineageTag: 5dae2afe-f93a-4060-8a5d-9d2bb63fe7e3
+		summarizeBy: none
+		sourceColumn: Target_Unit
 
 		annotation SummarizationSetBy = Automatic
 
-		annotation PBI_FormatHint = {"isGeneralNumber":true}
+	column Actual_Unit
+		dataType: string
+		lineageTag: 86b67306-4543-49ba-863a-945284b1803b
+		summarizeBy: none
+		sourceColumn: Actual_Unit
+
+		annotation SummarizationSetBy = Automatic
 
 	partition kpis = m
 		mode: import
@@ -93,11 +106,11 @@ table kpis
 				    Origen = Excel.Workbook(File.Contents("C:\Users\mauro.turner\Proyectos\Dashboards\Global-IT---OKR-KPI-Dashboard\Datasets\okrs.xlsx"), null, true),
 				    kpis_Sheet = Origen{[Item="kpis",Kind="Sheet"]}[Data],
 				    #"Encabezados promovidos" = Table.PromoteHeaders(kpis_Sheet, [PromoteAllScalars=true]),
-				    #"Tipo cambiado" = Table.TransformColumnTypes(#"Encabezados promovidos",{{"KPI_ID", Int64.Type}, {"Objetive_ID", Int64.Type}, {"Unit_ID", Int64.Type}, {"KPI_Goal", type text}, {"Target_Value", type number}})
+				    #"Tipo cambiado" = Table.TransformColumnTypes(#"Encabezados promovidos",{{"KPI_ID", Int64.Type}, {"Objetive_ID", Int64.Type}, {"Target_Unit", type text}, {"Actual_Unit", type text}, {"KPI_Goal", type text}, {"Target_Value", type number}})
 				in
 				    #"Tipo cambiado"
 
-	annotation PBI_ResultType = Exception
+	annotation PBI_ResultType = Table
 
 	annotation PBI_NavigationStepName = Navegación
 

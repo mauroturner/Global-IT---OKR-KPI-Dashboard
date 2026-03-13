@@ -19,12 +19,6 @@ cultureInfo es-ES
 			          }
 			        },
 			        {
-			          "owner": {
-			            "Type": "Noun",
-			            "State": "Generated"
-			          }
-			        },
-			        {
 			          "ownership": {
 			            "Type": "Noun",
 			            "State": "Suggested",
@@ -111,20 +105,7 @@ cultureInfo es-ES
 			          }
 			        },
 			        {
-			          "source name": {
-			            "Type": "Noun",
-			            "State": "Generated"
-			          }
-			        },
-			        {
 			          "name": {
-			            "State": "Generated",
-			            "Weight": 0.97
-			          }
-			        },
-			        {
-			          "name": {
-			            "Type": "Noun",
 			            "State": "Generated",
 			            "Weight": 0.97
 			          }
@@ -194,20 +175,7 @@ cultureInfo es-ES
 			          }
 			        },
 			        {
-			          "source ID": {
-			            "Type": "Noun",
-			            "State": "Generated"
-			          }
-			        },
-			        {
 			          "ID": {
-			            "State": "Generated",
-			            "Weight": 0.97
-			          }
-			        },
-			        {
-			          "ID": {
-			            "Type": "Noun",
 			            "State": "Generated",
 			            "Weight": 0.97
 			          }
@@ -272,12 +240,6 @@ cultureInfo es-ES
 			      "Terms": [
 			        {
 			          "source": {
-			            "State": "Generated"
-			          }
-			        },
-			        {
-			          "source": {
-			            "Type": "Noun",
 			            "State": "Generated"
 			          }
 			        },
@@ -398,20 +360,7 @@ cultureInfo es-ES
 			          }
 			        },
 			        {
-			          "owner ID": {
-			            "Type": "Noun",
-			            "State": "Generated"
-			          }
-			        },
-			        {
 			          "ID": {
-			            "State": "Generated",
-			            "Weight": 0.97
-			          }
-			        },
-			        {
-			          "ID": {
-			            "Type": "Noun",
 			            "State": "Generated",
 			            "Weight": 0.97
 			          }
@@ -541,20 +490,7 @@ cultureInfo es-ES
 			          }
 			        },
 			        {
-			          "owner name": {
-			            "Type": "Noun",
-			            "State": "Generated"
-			          }
-			        },
-			        {
 			          "name": {
-			            "State": "Generated",
-			            "Weight": 0.97
-			          }
-			        },
-			        {
-			          "name": {
-			            "Type": "Noun",
 			            "State": "Generated",
 			            "Weight": 0.97
 			          }
@@ -683,12 +619,6 @@ cultureInfo es-ES
 			          }
 			        },
 			        {
-			          "result": {
-			            "Type": "Noun",
-			            "State": "Generated"
-			          }
-			        },
-			        {
 			          "consequence": {
 			            "Type": "Noun",
 			            "State": "Suggested",
@@ -795,20 +725,7 @@ cultureInfo es-ES
 			          }
 			        },
 			        {
-			          "result ID": {
-			            "Type": "Noun",
-			            "State": "Generated"
-			          }
-			        },
-			        {
 			          "ID": {
-			            "State": "Generated",
-			            "Weight": 0.97
-			          }
-			        },
-			        {
-			          "ID": {
-			            "Type": "Noun",
 			            "State": "Generated",
 			            "Weight": 0.97
 			          }
@@ -881,12 +798,6 @@ cultureInfo es-ES
 			          }
 			        },
 			        {
-			          "kpi id": {
-			            "Type": "Noun",
-			            "State": "Generated"
-			          }
-			        },
-			        {
 			          "KPI_ID": {
 			            "Type": "Noun",
 			            "State": "Generated",
@@ -950,12 +861,6 @@ cultureInfo es-ES
 			          }
 			        },
 			        {
-			          "date": {
-			            "Type": "Noun",
-			            "State": "Generated"
-			          }
-			        },
-			        {
 			          "moment": {
 			            "Type": "Noun",
 			            "State": "Suggested",
@@ -993,12 +898,6 @@ cultureInfo es-ES
 			          }
 			        },
 			        {
-			          "actual value": {
-			            "Type": "Noun",
-			            "State": "Generated"
-			          }
-			        },
-			        {
 			          "Actual_Value": {
 			            "Type": "Noun",
 			            "State": "Generated",
@@ -1007,13 +906,6 @@ cultureInfo es-ES
 			        },
 			        {
 			          "value": {
-			            "State": "Generated",
-			            "Weight": 0.97
-			          }
-			        },
-			        {
-			          "value": {
-			            "Type": "Noun",
 			            "State": "Generated",
 			            "Weight": 0.97
 			          }
@@ -1135,12 +1027,6 @@ cultureInfo es-ES
 			          }
 			        },
 			        {
-			          "is beginning number": {
-			            "Type": "Noun",
-			            "State": "Generated"
-			          }
-			        },
-			        {
 			          "Is_Beginning_Number": {
 			            "Type": "Noun",
 			            "State": "Generated",
@@ -1149,13 +1035,6 @@ cultureInfo es-ES
 			        },
 			        {
 			          "beginning number": {
-			            "State": "Generated",
-			            "Weight": 0.97
-			          }
-			        },
-			        {
-			          "beginning number": {
-			            "Type": "Noun",
 			            "State": "Generated",
 			            "Weight": 0.97
 			          }
@@ -1197,12 +1076,6 @@ cultureInfo es-ES
 			          }
 			        },
 			        {
-			          "actual status": {
-			            "Type": "Noun",
-			            "State": "Generated"
-			          }
-			        },
-			        {
 			          "Actual_Status": {
 			            "Type": "Noun",
 			            "State": "Generated",
@@ -1211,13 +1084,6 @@ cultureInfo es-ES
 			        },
 			        {
 			          "status": {
-			            "State": "Generated",
-			            "Weight": 0.97
-			          }
-			        },
-			        {
-			          "status": {
-			            "Type": "Noun",
 			            "State": "Generated",
 			            "Weight": 0.97
 			          }
@@ -1339,12 +1205,6 @@ cultureInfo es-ES
 			          }
 			        },
 			        {
-			          "calculated target value": {
-			            "Type": "Noun",
-			            "State": "Generated"
-			          }
-			        },
-			        {
 			          "Calculated_Target_Value": {
 			            "Type": "Noun",
 			            "State": "Generated",
@@ -1353,13 +1213,6 @@ cultureInfo es-ES
 			        },
 			        {
 			          "value": {
-			            "State": "Generated",
-			            "Weight": 0.97
-			          }
-			        },
-			        {
-			          "value": {
-			            "Type": "Noun",
 			            "State": "Generated",
 			            "Weight": 0.97
 			          }
@@ -1478,12 +1331,6 @@ cultureInfo es-ES
 			          "objetive": {
 			            "State": "Generated"
 			          }
-			        },
-			        {
-			          "objetive": {
-			            "Type": "Noun",
-			            "State": "Generated"
-			          }
 			        }
 			      ]
 			    },
@@ -1502,20 +1349,7 @@ cultureInfo es-ES
 			          }
 			        },
 			        {
-			          "objetive ID": {
-			            "Type": "Noun",
-			            "State": "Generated"
-			          }
-			        },
-			        {
 			          "ID": {
-			            "State": "Generated",
-			            "Weight": 0.97
-			          }
-			        },
-			        {
-			          "ID": {
-			            "Type": "Noun",
 			            "State": "Generated",
 			            "Weight": 0.97
 			          }
@@ -1585,42 +1419,16 @@ cultureInfo es-ES
 			          }
 			        },
 			        {
-			          "objetive name": {
-			            "Type": "Noun",
-			            "State": "Generated"
-			          }
-			        },
-			        {
 			          "name": {
 			            "State": "Generated",
 			            "Weight": 0.97
 			          }
 			        },
 			        {
-			          "name": {
-			            "Type": "Noun",
-			            "State": "Generated",
-			            "Weight": 0.97
-			          }
-			        },
-			        {
-			          "Objetive_Name ": {
+			          "Objetive_Name": {
 			            "Type": "Noun",
 			            "State": "Generated",
 			            "Weight": 0.99
-			          }
-			        },
-			        {
-			          "Objetive_Name": {
-			            "State": "Generated",
-			            "Weight": 0.96029999999999993
-			          }
-			        },
-			        {
-			          "Objetive_Name": {
-			            "Type": "Noun",
-			            "State": "Generated",
-			            "Weight": 0.96029999999999993
 			          }
 			        },
 			        {
@@ -1678,12 +1486,6 @@ cultureInfo es-ES
 			          "kpis": {
 			            "State": "Generated"
 			          }
-			        },
-			        {
-			          "kpis": {
-			            "Type": "Noun",
-			            "State": "Generated"
-			          }
 			        }
 			      ]
 			    },
@@ -1698,12 +1500,6 @@ cultureInfo es-ES
 			      "Terms": [
 			        {
 			          "kpi id": {
-			            "State": "Generated"
-			          }
-			        },
-			        {
-			          "kpi id": {
-			            "Type": "Noun",
 			            "State": "Generated"
 			          }
 			        },
@@ -1774,12 +1570,6 @@ cultureInfo es-ES
 			          }
 			        },
 			        {
-			          "objetive ID": {
-			            "Type": "Noun",
-			            "State": "Generated"
-			          }
-			        },
-			        {
 			          "Objetive_ID": {
 			            "Type": "Noun",
 			            "State": "Generated",
@@ -1828,138 +1618,6 @@ cultureInfo es-ES
 			        }
 			      ]
 			    },
-			    "kpis.unit_ID": {
-			      "Definition": {
-			        "Binding": {
-			          "ConceptualEntity": "kpis",
-			          "ConceptualProperty": "Unit_ID"
-			        }
-			      },
-			      "State": "Generated",
-			      "Visibility": {
-			        "Value": "Hidden"
-			      },
-			      "Terms": [
-			        {
-			          "unit ID": {
-			            "State": "Generated"
-			          }
-			        },
-			        {
-			          "unit ID": {
-			            "Type": "Noun",
-			            "State": "Generated"
-			          }
-			        },
-			        {
-			          "Unit_ID": {
-			            "Type": "Noun",
-			            "State": "Generated",
-			            "Weight": 0.99
-			          }
-			        },
-			        {
-			          "unit identification": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.75
-			          }
-			        },
-			        {
-			          "unit identity": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.75
-			          }
-			        },
-			        {
-			          "unit identifier": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.75
-			          }
-			        },
-			        {
-			          "unit credential": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.727
-			          }
-			        },
-			        {
-			          "module id": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.6
-			          }
-			        },
-			        {
-			          "element id": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.6
-			          }
-			        },
-			        {
-			          "entity id": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.6
-			          }
-			        },
-			        {
-			          "group id": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.582
-			          }
-			        },
-			        {
-			          "component id": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.582
-			          }
-			        },
-			        {
-			          "constituent id": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.582
-			          }
-			        }
-			      ]
-			    },
 			    "kpis.KPI_goal": {
 			      "Definition": {
 			        "Binding": {
@@ -1975,12 +1633,6 @@ cultureInfo es-ES
 			          }
 			        },
 			        {
-			          "KPI goal": {
-			            "Type": "Noun",
-			            "State": "Generated"
-			          }
-			        },
-			        {
 			          "KPI_Goal": {
 			            "Type": "Noun",
 			            "State": "Generated",
@@ -1989,13 +1641,6 @@ cultureInfo es-ES
 			        },
 			        {
 			          "goal": {
-			            "State": "Generated",
-			            "Weight": 0.97
-			          }
-			        },
-			        {
-			          "goal": {
-			            "Type": "Noun",
 			            "State": "Generated",
 			            "Weight": 0.97
 			          }
@@ -2117,12 +1762,6 @@ cultureInfo es-ES
 			          }
 			        },
 			        {
-			          "target value": {
-			            "Type": "Noun",
-			            "State": "Generated"
-			          }
-			        },
-			        {
 			          "Target_Value": {
 			            "Type": "Noun",
 			            "State": "Generated",
@@ -2131,13 +1770,6 @@ cultureInfo es-ES
 			        },
 			        {
 			          "value": {
-			            "State": "Generated",
-			            "Weight": 0.97
-			          }
-			        },
-			        {
-			          "value": {
-			            "Type": "Noun",
 			            "State": "Generated",
 			            "Weight": 0.97
 			          }
@@ -2244,148 +1876,6 @@ cultureInfo es-ES
 			        }
 			      ]
 			    },
-			    "kpis.adjusted_target_value": {
-			      "Definition": {
-			        "Binding": {
-			          "ConceptualEntity": "kpis",
-			          "ConceptualProperty": "Adjusted_Target_Value"
-			        }
-			      },
-			      "State": "Generated",
-			      "Terms": [
-			        {
-			          "adjusted target value": {
-			            "State": "Generated"
-			          }
-			        },
-			        {
-			          "adjusted target value": {
-			            "Type": "Noun",
-			            "State": "Generated"
-			          }
-			        },
-			        {
-			          "Adjusted_Target_Value": {
-			            "Type": "Noun",
-			            "State": "Generated",
-			            "Weight": 0.99
-			          }
-			        },
-			        {
-			          "value": {
-			            "State": "Generated",
-			            "Weight": 0.97
-			          }
-			        },
-			        {
-			          "value": {
-			            "Type": "Noun",
-			            "State": "Generated",
-			            "Weight": 0.97
-			          }
-			        },
-			        {
-			          "adjusted focus value": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.591
-			          }
-			        },
-			        {
-			          "adjusted goal value": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.591
-			          }
-			        },
-			        {
-			          "adjusted objective value": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.591
-			          }
-			        },
-			        {
-			          "adjusted target assessment": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.508
-			          }
-			        },
-			        {
-			          "adjusted target worth": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.492
-			          }
-			        },
-			        {
-			          "adjusted target price": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.492
-			          }
-			        },
-			        {
-			          "adjusted target cost": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.492
-			          }
-			        },
-			        {
-			          "adjusted target charge": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.492
-			          }
-			        },
-			        {
-			          "adjusted target rate": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.492
-			          }
-			        },
-			        {
-			          "assessment": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.491
-			          }
-			        }
-			      ]
-			    },
 			    "kpi_source": {
 			      "Definition": {
 			        "Binding": {
@@ -2396,12 +1886,6 @@ cultureInfo es-ES
 			      "Terms": [
 			        {
 			          "kpi source": {
-			            "State": "Generated"
-			          }
-			        },
-			        {
-			          "kpi source": {
-			            "Type": "Noun",
 			            "State": "Generated"
 			          }
 			        },
@@ -2532,12 +2016,6 @@ cultureInfo es-ES
 			          }
 			        },
 			        {
-			          "kpi id": {
-			            "Type": "Noun",
-			            "State": "Generated"
-			          }
-			        },
-			        {
 			          "KPI_ID": {
 			            "Type": "Noun",
 			            "State": "Generated",
@@ -2604,12 +2082,6 @@ cultureInfo es-ES
 			          }
 			        },
 			        {
-			          "source ID": {
-			            "Type": "Noun",
-			            "State": "Generated"
-			          }
-			        },
-			        {
 			          "Source_ID": {
 			            "Type": "Noun",
 			            "State": "Generated",
@@ -2668,12 +2140,6 @@ cultureInfo es-ES
 			      "Terms": [
 			        {
 			          "kpi owner": {
-			            "State": "Generated"
-			          }
-			        },
-			        {
-			          "kpi owner": {
-			            "Type": "Noun",
 			            "State": "Generated"
 			          }
 			        },
@@ -2774,12 +2240,6 @@ cultureInfo es-ES
 			          }
 			        },
 			        {
-			          "kpi id": {
-			            "Type": "Noun",
-			            "State": "Generated"
-			          }
-			        },
-			        {
 			          "KPI_ID": {
 			            "Type": "Noun",
 			            "State": "Generated",
@@ -2842,12 +2302,6 @@ cultureInfo es-ES
 			      "Terms": [
 			        {
 			          "owner ID": {
-			            "State": "Generated"
-			          }
-			        },
-			        {
-			          "owner ID": {
-			            "Type": "Noun",
 			            "State": "Generated"
 			          }
 			        },
@@ -2974,12 +2428,6 @@ cultureInfo es-ES
 			          }
 			        },
 			        {
-			          "calendar": {
-			            "Type": "Noun",
-			            "State": "Generated"
-			          }
-			        },
-			        {
 			          "almanac": {
 			            "Type": "Noun",
 			            "State": "Suggested",
@@ -3066,12 +2514,6 @@ cultureInfo es-ES
 			          }
 			        },
 			        {
-			          "date": {
-			            "Type": "Noun",
-			            "State": "Generated"
-			          }
-			        },
-			        {
 			          "moment": {
 			            "Type": "Noun",
 			            "State": "Suggested",
@@ -3109,12 +2551,6 @@ cultureInfo es-ES
 			          "jerarquía de fecha": {
 			            "State": "Generated"
 			          }
-			        },
-			        {
-			          "jerarquía de fecha": {
-			            "Type": "Noun",
-			            "State": "Generated"
-			          }
 			        }
 			      ]
 			    },
@@ -3136,19 +2572,7 @@ cultureInfo es-ES
 			          }
 			        },
 			        {
-			          "año": {
-			            "Type": "Noun",
-			            "State": "Generated"
-			          }
-			        },
-			        {
 			          "date año": {
-			            "State": "Generated"
-			          }
-			        },
-			        {
-			          "date año": {
-			            "Type": "Noun",
 			            "State": "Generated"
 			          }
 			        },
@@ -3192,19 +2616,7 @@ cultureInfo es-ES
 			          }
 			        },
 			        {
-			          "trimestre": {
-			            "Type": "Noun",
-			            "State": "Generated"
-			          }
-			        },
-			        {
 			          "date trimestre": {
-			            "State": "Generated"
-			          }
-			        },
-			        {
-			          "date trimestre": {
-			            "Type": "Noun",
 			            "State": "Generated"
 			          }
 			        },
@@ -3248,19 +2660,7 @@ cultureInfo es-ES
 			          }
 			        },
 			        {
-			          "me": {
-			            "Type": "Noun",
-			            "State": "Generated"
-			          }
-			        },
-			        {
 			          "date me": {
-			            "State": "Generated"
-			          }
-			        },
-			        {
-			          "date me": {
-			            "Type": "Noun",
 			            "State": "Generated"
 			          }
 			        },
@@ -3304,19 +2704,7 @@ cultureInfo es-ES
 			          }
 			        },
 			        {
-			          "día": {
-			            "Type": "Noun",
-			            "State": "Generated"
-			          }
-			        },
-			        {
 			          "date día": {
-			            "State": "Generated"
-			          }
-			        },
-			        {
-			          "date día": {
-			            "Type": "Noun",
 			            "State": "Generated"
 			          }
 			        },
@@ -3357,12 +2745,6 @@ cultureInfo es-ES
 			          }
 			        },
 			        {
-			          "year": {
-			            "Type": "Noun",
-			            "State": "Generated"
-			          }
-			        },
-			        {
 			          "yr": {
 			            "Type": "Noun",
 			            "State": "Suggested",
@@ -3386,12 +2768,6 @@ cultureInfo es-ES
 			      "Terms": [
 			        {
 			          "month no": {
-			            "State": "Generated"
-			          }
-			        },
-			        {
-			          "month no": {
-			            "Type": "Noun",
 			            "State": "Generated"
 			          }
 			        },
@@ -3428,12 +2804,6 @@ cultureInfo es-ES
 			      "Terms": [
 			        {
 			          "month name": {
-			            "State": "Generated"
-			          }
-			        },
-			        {
-			          "month name": {
-			            "Type": "Noun",
 			            "State": "Generated"
 			          }
 			        },
@@ -3504,20 +2874,7 @@ cultureInfo es-ES
 			          }
 			        },
 			        {
-			          "month-year": {
-			            "Type": "Noun",
-			            "State": "Generated"
-			          }
-			        },
-			        {
 			          "month year": {
-			            "State": "Generated",
-			            "Weight": 0.97
-			          }
-			        },
-			        {
-			          "month year": {
-			            "Type": "Noun",
 			            "State": "Generated",
 			            "Weight": 0.97
 			          }
@@ -3579,33 +2936,13 @@ cultureInfo es-ES
 			          }
 			        },
 			        {
-			          "month-year sort": {
-			            "Type": "Noun",
-			            "State": "Generated"
-			          }
-			        },
-			        {
 			          "month year sort": {
 			            "State": "Generated",
 			            "Weight": 0.97
 			          }
 			        },
 			        {
-			          "month year sort": {
-			            "Type": "Noun",
-			            "State": "Generated",
-			            "Weight": 0.97
-			          }
-			        },
-			        {
 			          "year sort": {
-			            "State": "Generated",
-			            "Weight": 0.97
-			          }
-			        },
-			        {
-			          "year sort": {
-			            "Type": "Noun",
 			            "State": "Generated",
 			            "Weight": 0.97
 			          }
@@ -3727,12 +3064,6 @@ cultureInfo es-ES
 			          }
 			        },
 			        {
-			          "fiscal year": {
-			            "Type": "Noun",
-			            "State": "Generated"
-			          }
-			        },
-			        {
 			          "fiscal yr": {
 			            "Type": "Noun",
 			            "State": "Suggested",
@@ -3819,12 +3150,6 @@ cultureInfo es-ES
 			          }
 			        },
 			        {
-			          "fiscal quarter": {
-			            "Type": "Noun",
-			            "State": "Generated"
-			          }
-			        },
-			        {
 			          "fiscal qtr": {
 			            "Type": "Noun",
 			            "State": "Suggested",
@@ -3881,12 +3206,6 @@ cultureInfo es-ES
 			          }
 			        },
 			        {
-			          "fiscal month no": {
-			            "Type": "Noun",
-			            "State": "Generated"
-			          }
-			        },
-			        {
 			          "fiscal month number": {
 			            "Type": "Noun",
 			            "State": "Suggested",
@@ -3928,12 +3247,6 @@ cultureInfo es-ES
 			      "Terms": [
 			        {
 			          "unit": {
-			            "State": "Generated"
-			          }
-			        },
-			        {
-			          "unit": {
-			            "Type": "Noun",
 			            "State": "Generated"
 			          }
 			        },
@@ -4034,20 +3347,7 @@ cultureInfo es-ES
 			          }
 			        },
 			        {
-			          "unit ID": {
-			            "Type": "Noun",
-			            "State": "Generated"
-			          }
-			        },
-			        {
 			          "ID": {
-			            "State": "Generated",
-			            "Weight": 0.97
-			          }
-			        },
-			        {
-			          "ID": {
-			            "Type": "Noun",
 			            "State": "Generated",
 			            "Weight": 0.97
 			          }
@@ -4177,20 +3477,7 @@ cultureInfo es-ES
 			          }
 			        },
 			        {
-			          "unit name": {
-			            "Type": "Noun",
-			            "State": "Generated"
-			          }
-			        },
-			        {
 			          "name": {
-			            "State": "Generated",
-			            "Weight": 0.97
-			          }
-			        },
-			        {
-			          "name": {
-			            "Type": "Noun",
 			            "State": "Generated",
 			            "Weight": 0.97
 			          }
@@ -4304,147 +3591,410 @@ cultureInfo es-ES
 			        }
 			      ],
 			      "NameType": "Name"
+			    },
+			    "kpis.target_unit": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "kpis",
+			          "ConceptualProperty": "Target_Unit"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "target unit": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "Target_Unit": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "target module": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "target element": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "target entity": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "target group": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        },
+			        {
+			          "target component": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        },
+			        {
+			          "target constituent": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        },
+			        {
+			          "target item": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        },
+			        {
+			          "target part": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        },
+			        {
+			          "target section": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        },
+			        {
+			          "focus unit": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        }
+			      ]
+			    },
+			    "kpis.actual_unit": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "kpis",
+			          "ConceptualProperty": "Actual_Unit"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "actual unit": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "Actual_Unit": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "actual module": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "actual element": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "actual entity": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "actual group": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        },
+			        {
+			          "actual component": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        },
+			        {
+			          "actual constituent": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        },
+			        {
+			          "actual item": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        },
+			        {
+			          "actual part": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        },
+			        {
+			          "actual section": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        },
+			        {
+			          "real unit": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        }
+			      ]
+			    },
+			    "kpis.a": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "kpis",
+			          "ConceptualProperty": "a"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "a": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "kpis.adjusted_target_value": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "kpis",
+			          "ConceptualProperty": "Adjusted_Target_Value"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "adjusted target value": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "Adjusted_Target_Value": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "value": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "adjusted focus value": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        },
+			        {
+			          "adjusted goal value": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        },
+			        {
+			          "adjusted objective value": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        },
+			        {
+			          "adjusted target assessment": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.508
+			          }
+			        },
+			        {
+			          "adjusted target worth": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.492
+			          }
+			        },
+			        {
+			          "adjusted target price": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.492
+			          }
+			        },
+			        {
+			          "adjusted target cost": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.492
+			          }
+			        },
+			        {
+			          "adjusted target charge": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.492
+			          }
+			        },
+			        {
+			          "adjusted target rate": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.492
+			          }
+			        },
+			        {
+			          "assessment": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "Planned": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
 			    }
 			  },
 			  "Relationships": {
-			    "kpi_source_has_kpis": {
-			      "Binding": {
-			        "ConceptualEntity": "kpi_sources"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "kpi_source": {
-			          "Target": {
-			            "Entity": "kpi_source"
-			          }
-			        },
-			        "kpis": {
-			          "Target": {
-			            "Entity": "kpis"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "kpi_source"
-			            },
-			            "Object": {
-			              "Role": "kpis"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "kpi_sources_have_kpises"
-			        },
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "kpis"
-			            },
-			            "Object": {
-			              "Role": "kpi_source"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "kpises_have_kpi_sources"
-			        }
-			      ]
-			    },
-			    "kpi_source_has_source": {
-			      "Binding": {
-			        "ConceptualEntity": "kpi_sources"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "kpi_source": {
-			          "Target": {
-			            "Entity": "kpi_source"
-			          }
-			        },
-			        "source": {
-			          "Target": {
-			            "Entity": "source"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "kpi_source"
-			            },
-			            "Object": {
-			              "Role": "source"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "kpi_sources_have_sources"
-			        },
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "source"
-			            },
-			            "Object": {
-			              "Role": "kpi_source"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "sources_have_kpi_sources"
-			        }
-			      ]
-			    },
-			    "kpis_has_unit": {
-			      "Binding": {
-			        "ConceptualEntity": "kpis"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "kpis": {
-			          "Target": {
-			            "Entity": "kpis"
-			          }
-			        },
-			        "unit": {
-			          "Target": {
-			            "Entity": "unit"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "kpis"
-			            },
-			            "Object": {
-			              "Role": "unit"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "kpises_have_units"
-			        },
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "unit"
-			            },
-			            "Object": {
-			              "Role": "kpis"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "units_have_kpises"
-			        }
-			      ]
-			    },
 			    "kpis_has_objetive": {
 			      "Binding": {
 			        "ConceptualEntity": "kpis"
@@ -4580,6 +4130,231 @@ cultureInfo es-ES
 			          "State": "Generated",
 			          "Weight": 0.99,
 			          "ID": "kpises_have_results"
+			        }
+			      ]
+			    },
+			    "kpis_has_adjusted_target_value": {
+			      "Binding": {
+			        "ConceptualEntity": "kpis"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "kpis": {
+			          "Target": {
+			            "Entity": "kpis"
+			          }
+			        },
+			        "kpis.adjusted_target_value": {
+			          "Target": {
+			            "Entity": "kpis.adjusted_target_value"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "kpis"
+			            },
+			            "Object": {
+			              "Role": "kpis.adjusted_target_value"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "kpises_have_adjusted_target_value"
+			        },
+			        {
+			          "Adjective": {
+			            "Subject": {
+			              "Role": "kpis"
+			            },
+			            "Adjectives": [
+			              {
+			                "Planned": {
+			                  "State": "Generated"
+			                }
+			              }
+			            ],
+			            "Measurement": {
+			              "Role": "kpis.adjusted_target_value"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "adjusted_target_value_indicates_how_Planned_kpises_are"
+			        }
+			      ]
+			    },
+			    "result_has_kpis_adjusted_target_value": {
+			      "Binding": {
+			        "ConceptualEntity": "Results"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "result": {
+			          "Target": {
+			            "Entity": "result"
+			          }
+			        },
+			        "kpis.adjusted_target_value": {
+			          "Target": {
+			            "Entity": "kpis.adjusted_target_value"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "result"
+			            },
+			            "Object": {
+			              "Role": "kpis.adjusted_target_value"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "results_have_adjusted_target_value"
+			        },
+			        {
+			          "Adjective": {
+			            "Subject": {
+			              "Role": "result"
+			            },
+			            "Adjectives": [
+			              {
+			                "Planned": {
+			                  "State": "Generated"
+			                }
+			              }
+			            ],
+			            "Measurement": {
+			              "Role": "kpis.adjusted_target_value"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "adjusted_target_value_indicates_how_Planned_results_are"
+			        }
+			      ]
+			    },
+			    "kpis_has_a": {
+			      "Binding": {
+			        "ConceptualEntity": "kpis"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "kpis": {
+			          "Target": {
+			            "Entity": "kpis"
+			          }
+			        },
+			        "kpis.a": {
+			          "Target": {
+			            "Entity": "kpis.a"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "kpis"
+			            },
+			            "Object": {
+			              "Role": "kpis.a"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "kpises_have_a"
+			        },
+			        {
+			          "Preposition": {
+			            "Subject": {
+			              "Role": "kpis"
+			            },
+			            "Prepositions": [
+			              {
+			                "a": {
+			                  "State": "Generated"
+			                }
+			              }
+			            ],
+			            "Object": {
+			              "Role": "kpis.a"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "kpises_are_a_a"
+			        }
+			      ]
+			    },
+			    "kpis_has_actual_unit": {
+			      "Binding": {
+			        "ConceptualEntity": "kpis"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "kpis": {
+			          "Target": {
+			            "Entity": "kpis"
+			          }
+			        },
+			        "kpis.actual_unit": {
+			          "Target": {
+			            "Entity": "kpis.actual_unit"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "kpis"
+			            },
+			            "Object": {
+			              "Role": "kpis.actual_unit"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "kpises_have_actual_units"
+			        }
+			      ]
+			    },
+			    "kpis_has_target_unit": {
+			      "Binding": {
+			        "ConceptualEntity": "kpis"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "kpis": {
+			          "Target": {
+			            "Entity": "kpis"
+			          }
+			        },
+			        "kpis.target_unit": {
+			          "Target": {
+			            "Entity": "kpis.target_unit"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "kpis"
+			            },
+			            "Object": {
+			              "Role": "kpis.target_unit"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "kpises_have_target_units"
 			        }
 			      ]
 			    },
@@ -4969,39 +4744,6 @@ cultureInfo es-ES
 			          "State": "Generated",
 			          "Weight": 0.99,
 			          "ID": "calendars_have_dates"
-			        }
-			      ]
-			    },
-			    "kpis_has_adjusted_target_value": {
-			      "Binding": {
-			        "ConceptualEntity": "kpis"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "kpis": {
-			          "Target": {
-			            "Entity": "kpis"
-			          }
-			        },
-			        "kpis.adjusted_target_value": {
-			          "Target": {
-			            "Entity": "kpis.adjusted_target_value"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "kpis"
-			            },
-			            "Object": {
-			              "Role": "kpis.adjusted_target_value"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "kpises_have_adjusted_target_values"
 			        }
 			      ]
 			    },
@@ -5720,6 +5462,98 @@ cultureInfo es-ES
 			          "State": "Generated",
 			          "Weight": 0.99,
 			          "ID": "owners_have_kpi_owners"
+			        }
+			      ]
+			    },
+			    "kpi_source_has_source": {
+			      "Binding": {
+			        "ConceptualEntity": "kpi_sources"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "kpi_source": {
+			          "Target": {
+			            "Entity": "kpi_source"
+			          }
+			        },
+			        "source": {
+			          "Target": {
+			            "Entity": "source"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "kpi_source"
+			            },
+			            "Object": {
+			              "Role": "source"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "kpi_sources_have_sources"
+			        },
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "source"
+			            },
+			            "Object": {
+			              "Role": "kpi_source"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "sources_have_kpi_sources"
+			        }
+			      ]
+			    },
+			    "kpi_source_has_kpis": {
+			      "Binding": {
+			        "ConceptualEntity": "kpi_sources"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "kpi_source": {
+			          "Target": {
+			            "Entity": "kpi_source"
+			          }
+			        },
+			        "kpis": {
+			          "Target": {
+			            "Entity": "kpis"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "kpi_source"
+			            },
+			            "Object": {
+			              "Role": "kpis"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "kpi_sources_have_kpises"
+			        },
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "kpis"
+			            },
+			            "Object": {
+			              "Role": "kpi_source"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "kpises_have_kpi_sources"
 			        }
 			      ]
 			    },

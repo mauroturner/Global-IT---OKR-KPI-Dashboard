@@ -50,21 +50,16 @@
             },
             {
               "field": {
-                "Aggregation": {
+                "Measure": {
                   "Expression": {
-                    "Column": {
-                      "Expression": {
-                        "SourceRef": {
-                          "Entity": "kpis"
-                        }
-                      },
-                      "Property": "Adjusted_Target_Value"
+                    "SourceRef": {
+                      "Entity": "kpis"
                     }
                   },
-                  "Function": 0
+                  "Property": "Adjusted_Target_Value"
                 }
               },
-              "queryRef": "Sum(kpis.Adjusted_Target_Value)",
+              "queryRef": "kpis.Adjusted_Target_Value",
               "nativeQueryRef": "Planned",
               "displayName": "Planned"
             }
@@ -324,32 +319,6 @@
                 "color": {
                   "expr": {
                     "ThemeDataColor": {
-                      "ColorId": 2,
-                      "Percent": 0
-                    }
-                  }
-                }
-              }
-            },
-            "fillTransparency": {
-              "expr": {
-                "Literal": {
-                  "Value": "55D"
-                }
-              }
-            }
-          },
-          "selector": {
-            "metadata": "Sum(kpis.Adjusted_Target_Value)"
-          }
-        },
-        {
-          "properties": {
-            "fill": {
-              "solid": {
-                "color": {
-                  "expr": {
-                    "ThemeDataColor": {
                       "ColorId": 3,
                       "Percent": 0
                     }
@@ -514,25 +483,6 @@
             }
           ]
         }
-      },
-      {
-        "name": "3c4ab216c580480c60ae",
-        "field": {
-          "Aggregation": {
-            "Expression": {
-              "Column": {
-                "Expression": {
-                  "SourceRef": {
-                    "Entity": "kpis"
-                  }
-                },
-                "Property": "Adjusted_Target_Value"
-              }
-            },
-            "Function": 0
-          }
-        },
-        "type": "Advanced"
       },
       {
         "name": "8c8aacdaacd5dacc1293",

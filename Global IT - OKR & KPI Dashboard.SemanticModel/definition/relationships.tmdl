@@ -33,7 +33,3 @@ relationship 7a39c031-5810-64ac-89d2-aafcf48db142
 	fromColumn: Results.Date
 	toColumn: Calendar.Date
 
-relationship AutoDetected_86a701cc-42f6-4d6c-a786-f4b13a2aaa33
-	fromColumn: kpis.Unit_ID
-	toColumn: units.Unit_ID
-
