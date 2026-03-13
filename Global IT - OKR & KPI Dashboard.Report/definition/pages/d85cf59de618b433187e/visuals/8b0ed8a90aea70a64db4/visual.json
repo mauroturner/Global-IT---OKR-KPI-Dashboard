@@ -36,41 +36,30 @@
           "projections": [
             {
               "field": {
-                "Aggregation": {
+                "Measure": {
                   "Expression": {
-                    "Column": {
-                      "Expression": {
-                        "SourceRef": {
-                          "Entity": "Results"
-                        }
-                      },
-                      "Property": "Actual_Value"
+                    "SourceRef": {
+                      "Entity": "Results"
                     }
                   },
-                  "Function": 0
+                  "Property": "Actual_Status"
                 }
               },
-              "queryRef": "Sum(Results.Actual_Value)",
-              "nativeQueryRef": "Actual",
-              "displayName": "Actual"
+              "queryRef": "Results.Actual_Status",
+              "nativeQueryRef": "Actual_Status"
             },
             {
               "field": {
-                "Aggregation": {
+                "Measure": {
                   "Expression": {
-                    "Column": {
-                      "Expression": {
-                        "SourceRef": {
-                          "Entity": "kpis"
-                        }
-                      },
-                      "Property": "Adjusted_Target_Value"
+                    "SourceRef": {
+                      "Entity": "kpis"
                     }
                   },
-                  "Function": 0
+                  "Property": "Adjusted_Target_Value"
                 }
               },
-              "queryRef": "Sum(kpis.Adjusted_Target_Value)",
+              "queryRef": "kpis.Adjusted_Target_Value",
               "nativeQueryRef": "Planned",
               "displayName": "Planned"
             }
@@ -81,18 +70,13 @@
         "sort": [
           {
             "field": {
-              "Aggregation": {
+              "Measure": {
                 "Expression": {
-                  "Column": {
-                    "Expression": {
-                      "SourceRef": {
-                        "Entity": "Results"
-                      }
-                    },
-                    "Property": "Actual_Value"
+                  "SourceRef": {
+                    "Entity": "Results"
                   }
                 },
-                "Function": 0
+                "Property": "Actual_Status"
               }
             },
             "direction": "Descending"
@@ -250,6 +234,27 @@
               }
             }
           }
+        },
+        {
+          "properties": {
+            "labelDisplayUnits": {
+              "expr": {
+                "Literal": {
+                  "Value": "-1D"
+                }
+              }
+            },
+            "valueCustomFormatString": {
+              "expr": {
+                "Literal": {
+                  "Value": "'0.00%'"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "Results.Actual_Status"
+          }
         }
       ],
       "categoryAxis": [
@@ -324,53 +329,6 @@
                 }
               }
             }
-          }
-        }
-      ],
-      "dataPoint": [
-        {
-          "properties": {
-            "fill": {
-              "solid": {
-                "color": {
-                  "expr": {
-                    "ThemeDataColor": {
-                      "ColorId": 3,
-                      "Percent": 0
-                    }
-                  }
-                }
-              }
-            }
-          },
-          "selector": {
-            "metadata": "Sum(Results.Actual_Value)"
-          }
-        },
-        {
-          "properties": {
-            "fill": {
-              "solid": {
-                "color": {
-                  "expr": {
-                    "ThemeDataColor": {
-                      "ColorId": 2,
-                      "Percent": 0
-                    }
-                  }
-                }
-              }
-            },
-            "fillTransparency": {
-              "expr": {
-                "Literal": {
-                  "Value": "55D"
-                }
-              }
-            }
-          },
-          "selector": {
-            "metadata": "Sum(kpis.Adjusted_Target_Value)"
           }
         }
       ],

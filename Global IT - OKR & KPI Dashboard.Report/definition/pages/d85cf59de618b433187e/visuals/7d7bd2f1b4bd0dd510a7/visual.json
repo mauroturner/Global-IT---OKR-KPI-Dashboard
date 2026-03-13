@@ -483,20 +483,6 @@
             }
           ]
         }
-      },
-      {
-        "name": "8c8aacdaacd5dacc1293",
-        "field": {
-          "Measure": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "Results"
-              }
-            },
-            "Property": "Actual_Status"
-          }
-        },
-        "type": "Advanced"
       }
     ]
   }

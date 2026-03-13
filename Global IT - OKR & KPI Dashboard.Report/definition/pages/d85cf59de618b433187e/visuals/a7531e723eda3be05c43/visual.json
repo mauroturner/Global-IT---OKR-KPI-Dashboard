@@ -56,21 +56,16 @@
             },
             {
               "field": {
-                "Aggregation": {
+                "Measure": {
                   "Expression": {
-                    "Column": {
-                      "Expression": {
-                        "SourceRef": {
-                          "Entity": "kpis"
-                        }
-                      },
-                      "Property": "Adjusted_Target_Value"
+                    "SourceRef": {
+                      "Entity": "kpis"
                     }
                   },
-                  "Function": 0
+                  "Property": "Adjusted_Target_Value"
                 }
               },
-              "queryRef": "Sum(kpis.Adjusted_Target_Value)",
+              "queryRef": "kpis.Adjusted_Target_Value",
               "nativeQueryRef": "Planned",
               "displayName": "Planned"
             }
@@ -354,7 +349,7 @@
                 "color": {
                   "expr": {
                     "ThemeDataColor": {
-                      "ColorId": 2,
+                      "ColorId": 5,
                       "Percent": 0
                     }
                   }
@@ -364,13 +359,13 @@
             "fillTransparency": {
               "expr": {
                 "Literal": {
-                  "Value": "55D"
+                  "Value": "0D"
                 }
               }
             }
           },
           "selector": {
-            "metadata": "Sum(kpis.Adjusted_Target_Value)"
+            "metadata": "kpis.Adjusted_Target_Value"
           }
         }
       ],

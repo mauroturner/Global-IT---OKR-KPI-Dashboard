@@ -3,27 +3,23 @@ table Results
 
 	measure Actual_Status = ```
 			
-			-- 1. Identify the latest date that contains a non-zero recorded value.
-			-- This filters out pre-populated future months in the 120-row table where Actual_Value defaults to 0.
 			VAR varLatestDateWithValue = 
 			    CALCULATE(
 			        MAX('results'[Date]),
 			        'results'[Actual_Value] <> 0
 			    )
-			
-			-- 2. Retrieve the value associated with that specific valid date.
 			VAR varLatestValue = 
 			    CALCULATE(
 			        SUM('results'[Actual_Value]),
 			        'results'[Date] = varLatestDateWithValue
 			    )
 			
-			-- 3. Return the result
 			RETURN
 			    varLatestValue
 			```
-		formatString: 0
 		lineageTag: f92170d1-51f9-4454-9966-172af2ec516a
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
 
 	measure Calculated_Target_Value = ```
 			
