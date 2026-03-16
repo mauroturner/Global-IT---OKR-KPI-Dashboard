@@ -2,11 +2,11 @@
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.6.0/schema.json",
   "name": "8b0ed8a90aea70a64db4",
   "position": {
-    "x": 345,
-    "y": 937.5,
+    "x": 538.33333333333337,
+    "y": 533.33333333333337,
     "z": 9000,
-    "height": 222.5,
-    "width": 276.25,
+    "height": 126.66666666666667,
+    "width": 225,
     "tabOrder": 9000
   },
   "visual": {
@@ -255,6 +255,27 @@
           "selector": {
             "metadata": "Results.Actual_Status"
           }
+        },
+        {
+          "properties": {
+            "labelDisplayUnits": {
+              "expr": {
+                "Literal": {
+                  "Value": "-1D"
+                }
+              }
+            },
+            "valueCustomFormatString": {
+              "expr": {
+                "Literal": {
+                  "Value": "'0.00%'"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "kpis.Adjusted_Target_Value"
+          }
         }
       ],
       "categoryAxis": [
@@ -338,7 +359,7 @@
             "clusteredGapSize": {
               "expr": {
                 "Literal": {
-                  "Value": "50D"
+                  "Value": "10D"
                 }
               }
             },
@@ -369,6 +390,46 @@
                 }
               }
             }
+          }
+        }
+      ],
+      "dataPoint": [
+        {
+          "properties": {
+            "fill": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "ThemeDataColor": {
+                      "ColorId": 2,
+                      "Percent": 0
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "Results.Actual_Status"
+          }
+        },
+        {
+          "properties": {
+            "fill": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "ThemeDataColor": {
+                      "ColorId": 6,
+                      "Percent": 0
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "kpis.Adjusted_Target_Value"
           }
         }
       ]

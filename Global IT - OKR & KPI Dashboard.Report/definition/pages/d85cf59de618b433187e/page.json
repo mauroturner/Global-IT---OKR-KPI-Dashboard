@@ -3,7 +3,7 @@
   "name": "d85cf59de618b433187e",
   "displayName": "Okrs",
   "displayOption": "ActualSize",
-  "height": 1462,
+  "height": 720,
   "width": 1280,
   "objects": {
     "background": [
@@ -14,7 +14,7 @@
               "name": {
                 "expr": {
                   "Literal": {
-                    "Value": "'Okrs_Dashboard (2).svg'"
+                    "Value": "'Okrs_Dashboard (5).svg'"
                   }
                 }
               },
@@ -23,14 +23,14 @@
                   "ResourcePackageItem": {
                     "PackageName": "RegisteredResources",
                     "PackageType": 1,
-                    "ItemName": "Okrs_Dashboard_(2)5936627493641766.svg"
+                    "ItemName": "Okrs_Dashboard_(5)2944336543821038.svg"
                   }
                 }
               },
               "scaling": {
                 "expr": {
                   "Literal": {
-                    "Value": "'Fill'"
+                    "Value": "'Normal'"
                   }
                 }
               }
