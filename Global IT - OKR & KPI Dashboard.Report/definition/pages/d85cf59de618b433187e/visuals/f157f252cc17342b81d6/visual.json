@@ -1,13 +1,13 @@
 {
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.6.0/schema.json",
-  "name": "78d098eab13a0b8302d4",
+  "name": "f157f252cc17342b81d6",
   "position": {
-    "x": 1203.3333333333335,
-    "y": 136.66666666666669,
-    "z": 14000,
-    "height": 25,
-    "width": 42.5,
-    "tabOrder": 14000
+    "x": 130,
+    "y": 410,
+    "z": 16000,
+    "height": 24.444444444444443,
+    "width": 52.222222222222221,
+    "tabOrder": 16000
   },
   "visual": {
     "visualType": "multiRowCard",
@@ -23,11 +23,11 @@
                       "Entity": "Results"
                     }
                   },
-                  "Property": "Compliance_Percentage"
+                  "Property": "Objective_Completion_Rate"
                 }
               },
-              "queryRef": "Results.Compliance_Percentage",
-              "nativeQueryRef": "Compliance_Percentage"
+              "queryRef": "Results.Objective_Completion_Rate",
+              "nativeQueryRef": "Objective_Completion_Rate"
             }
           ]
         }
@@ -42,7 +42,7 @@
                     "Entity": "Results"
                   }
                 },
-                "Property": "Compliance_Percentage"
+                "Property": "Objective_Completion_Rate"
               }
             },
             "direction": "Descending"
@@ -111,13 +111,6 @@
               "expr": {
                 "Literal": {
                   "Value": "false"
-                }
-              }
-            },
-            "outlineStyle": {
-              "expr": {
-                "Literal": {
-                  "Value": "0D"
                 }
               }
             }
@@ -265,7 +258,21 @@
                     [
                       {
                         "Literal": {
-                          "Value": "'Host 24+ AI-related Learning Events including hackathons'"
+                          "Value": "'Establish baseline for engagement survey and run every 6 months.'"
+                        }
+                      }
+                    ],
+                    [
+                      {
+                        "Literal": {
+                          "Value": "'Host 30+ engagement events, in office where possible, to create connections for Global IT Reinventors to foster relationships'"
+                        }
+                      }
+                    ],
+                    [
+                      {
+                        "Literal": {
+                          "Value": "'Execute monthly campaigns aligning with the broader Accenture ERGs and Corporate Citizenship including leadership engagement on Viva Engage (e.g., Mental Health Awareness)'"
                         }
                       }
                     ]
@@ -283,6 +290,20 @@
             }
           ]
         }
+      },
+      {
+        "name": "ead6f0103c95371e037a",
+        "field": {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Results"
+              }
+            },
+            "Property": "Objective_Completion_Rate"
+          }
+        },
+        "type": "Advanced"
       }
     ]
   }

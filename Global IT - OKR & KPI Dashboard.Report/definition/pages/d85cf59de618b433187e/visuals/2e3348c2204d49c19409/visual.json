@@ -1,13 +1,13 @@
 {
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.6.0/schema.json",
-  "name": "78d098eab13a0b8302d4",
+  "name": "2e3348c2204d49c19409",
   "position": {
-    "x": 1203.3333333333335,
-    "y": 136.66666666666669,
-    "z": 14000,
-    "height": 25,
-    "width": 42.5,
-    "tabOrder": 14000
+    "x": 703.33333333333337,
+    "y": 510,
+    "z": 22000,
+    "height": 24.444444444444443,
+    "width": 42.222222222222221,
+    "tabOrder": 22000
   },
   "visual": {
     "visualType": "multiRowCard",
@@ -111,13 +111,6 @@
               "expr": {
                 "Literal": {
                   "Value": "false"
-                }
-              }
-            },
-            "outlineStyle": {
-              "expr": {
-                "Literal": {
-                  "Value": "0D"
                 }
               }
             }
@@ -265,7 +258,7 @@
                     [
                       {
                         "Literal": {
-                          "Value": "'Host 24+ AI-related Learning Events including hackathons'"
+                          "Value": "'Deliver a seamless and engagening NJX for 100% of new Global IT team members to support their integration and growth'"
                         }
                       }
                     ]

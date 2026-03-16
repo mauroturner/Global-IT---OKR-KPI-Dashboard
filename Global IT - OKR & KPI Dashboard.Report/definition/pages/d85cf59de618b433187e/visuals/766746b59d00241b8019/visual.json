@@ -1,13 +1,13 @@
 {
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.6.0/schema.json",
-  "name": "78d098eab13a0b8302d4",
+  "name": "766746b59d00241b8019",
   "position": {
-    "x": 1203.3333333333335,
-    "y": 136.66666666666669,
-    "z": 14000,
-    "height": 25,
-    "width": 42.5,
-    "tabOrder": 14000
+    "x": 1203.3333333333333,
+    "y": 510,
+    "z": 23001,
+    "height": 24.444444444444443,
+    "width": 42.222222222222221,
+    "tabOrder": 23001
   },
   "visual": {
     "visualType": "multiRowCard",
@@ -23,11 +23,11 @@
                       "Entity": "Results"
                     }
                   },
-                  "Property": "Compliance_Percentage"
+                  "Property": "Compliance_Actual_Value_Percentage"
                 }
               },
-              "queryRef": "Results.Compliance_Percentage",
-              "nativeQueryRef": "Compliance_Percentage"
+              "queryRef": "Results.Compliance_Actual_Value_Percentage",
+              "nativeQueryRef": "Compliance_Actual_Value_Percentage"
             }
           ]
         }
@@ -42,7 +42,7 @@
                     "Entity": "Results"
                   }
                 },
-                "Property": "Compliance_Percentage"
+                "Property": "Compliance_Actual_Value_Percentage"
               }
             },
             "direction": "Descending"
@@ -111,13 +111,6 @@
               "expr": {
                 "Literal": {
                   "Value": "false"
-                }
-              }
-            },
-            "outlineStyle": {
-              "expr": {
-                "Literal": {
-                  "Value": "0D"
                 }
               }
             }
@@ -265,7 +258,7 @@
                     [
                       {
                         "Literal": {
-                          "Value": "'Host 24+ AI-related Learning Events including hackathons'"
+                          "Value": "'Provide Team Leads with foundation leadership training, including discussing progress with team members'"
                         }
                       }
                     ]
@@ -283,6 +276,20 @@
             }
           ]
         }
+      },
+      {
+        "name": "8ce44dd97a2c30872b26",
+        "field": {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Results"
+              }
+            },
+            "Property": "Compliance_Actual_Value_Percentage"
+          }
+        },
+        "type": "Advanced"
       }
     ]
   }

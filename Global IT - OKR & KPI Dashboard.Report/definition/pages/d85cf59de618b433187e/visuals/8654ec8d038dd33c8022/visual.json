@@ -520,6 +520,39 @@
             }
           ]
         }
+      },
+      {
+        "name": "9e5fd90d05600640dbdc",
+        "field": {
+          "Aggregation": {
+            "Expression": {
+              "Column": {
+                "Expression": {
+                  "SourceRef": {
+                    "Entity": "Results"
+                  }
+                },
+                "Property": "Actual_Value"
+              }
+            },
+            "Function": 0
+          }
+        },
+        "type": "Advanced"
+      },
+      {
+        "name": "4e689242460b76d97012",
+        "field": {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "kpis"
+              }
+            },
+            "Property": "Adjusted_Target_Value"
+          }
+        },
+        "type": "Advanced"
       }
     ]
   }

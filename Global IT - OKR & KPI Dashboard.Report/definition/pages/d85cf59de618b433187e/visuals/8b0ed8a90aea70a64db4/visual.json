@@ -551,6 +551,34 @@
             }
           ]
         }
+      },
+      {
+        "name": "7f731157b2d5bc102851",
+        "field": {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Results"
+              }
+            },
+            "Property": "Actual_Status"
+          }
+        },
+        "type": "Advanced"
+      },
+      {
+        "name": "890c833997185d1d30bd",
+        "field": {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "kpis"
+              }
+            },
+            "Property": "Adjusted_Target_Value"
+          }
+        },
+        "type": "Advanced"
       }
     ]
   }

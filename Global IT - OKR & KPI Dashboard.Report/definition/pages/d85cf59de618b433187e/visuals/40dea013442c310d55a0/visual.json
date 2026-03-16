@@ -1,13 +1,13 @@
 {
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.6.0/schema.json",
-  "name": "78d098eab13a0b8302d4",
+  "name": "40dea013442c310d55a0",
   "position": {
-    "x": 1203.3333333333335,
-    "y": 136.66666666666669,
-    "z": 14000,
-    "height": 25,
-    "width": 42.5,
-    "tabOrder": 14000
+    "x": 867.77777777777771,
+    "y": 322.22222222222223,
+    "z": 19000,
+    "height": 24.444444444444443,
+    "width": 42.222222222222221,
+    "tabOrder": 19000
   },
   "visual": {
     "visualType": "multiRowCard",
@@ -23,11 +23,11 @@
                       "Entity": "Results"
                     }
                   },
-                  "Property": "Compliance_Percentage"
+                  "Property": "Compliance_Actual_Value_Percentage"
                 }
               },
-              "queryRef": "Results.Compliance_Percentage",
-              "nativeQueryRef": "Compliance_Percentage"
+              "queryRef": "Results.Compliance_Actual_Value_Percentage",
+              "nativeQueryRef": "Compliance_Actual_Value_Percentage"
             }
           ]
         }
@@ -42,7 +42,7 @@
                     "Entity": "Results"
                   }
                 },
-                "Property": "Compliance_Percentage"
+                "Property": "Compliance_Actual_Value_Percentage"
               }
             },
             "direction": "Descending"
@@ -111,13 +111,6 @@
               "expr": {
                 "Literal": {
                   "Value": "false"
-                }
-              }
-            },
-            "outlineStyle": {
-              "expr": {
-                "Literal": {
-                  "Value": "0D"
                 }
               }
             }
@@ -265,7 +258,7 @@
                     [
                       {
                         "Literal": {
-                          "Value": "'Host 24+ AI-related Learning Events including hackathons'"
+                          "Value": "'Host 30+ engagement events, in office where possible, to create connections for Global IT Reinventors to foster relationships'"
                         }
                       }
                     ]

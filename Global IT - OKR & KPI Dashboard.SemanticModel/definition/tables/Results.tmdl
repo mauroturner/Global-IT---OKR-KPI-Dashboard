@@ -68,6 +68,119 @@ table Results
 		formatString: 0.00%;-0.00%;0.00%
 		lineageTag: 1605eb15-a5e4-4751-a3a1-9554ebe2d367
 
+	measure Objective_Completion_Rate = ```
+			
+			-- 1. Iterate over the 'kpis' dimension table in the current filter context
+			-- AVERAGEX will automatically handle the denominator (e.g., dividing by 3 if there are 3 KPIs)
+			VAR varAverageCompletion = 
+			    AVERAGEX(
+			        'kpis',
+			        
+			        -- 2. Retrieve the raw compliance percentage for each individual KPI
+			        -- COALESCE ensures that if a KPI has no data yet, it counts as 0% rather than being ignored
+			        VAR varRawCompliance = COALESCE([Compliance_Percentage], 0)
+			        
+			        -- 3. Cap the compliance at 100% (1.0)
+			        -- MIN is the most efficient way to cap values in DAX (avoids IF statements)
+			        VAR varCappedCompliance = MIN(varRawCompliance, 1)
+			        
+			        -- 4. Return the capped value to the AVERAGEX iteration loop
+			        RETURN
+			            varCappedCompliance
+			    )
+			
+			-- 5. Return the final aggregated average (Format this measure as 0.00% in the UI)
+			RETURN
+			    varAverageCompletion
+			```
+		formatString: 0.00%;-0.00%;0.00%
+		lineageTag: 6c9efaab-b75d-46e2-b42a-52c4e6039e73
+
+	measure Compliance_Actual_Value_Percentage = ```
+			
+			-- 1. Safely divide the Actual Status by the Planned target
+			-- Using DIVIDE() automatically handles divide-by-zero scenarios by returning BLANK
+			VAR varCompliance = 
+			    DIVIDE(
+			        [Total_Actual_Value], 
+			        [Adjusted_Target_Value],
+			        0
+			    )
+			
+			-- 2. Return the decimal value (to be formatted as 0.00% in the UI)
+			RETURN
+			    varCompliance
+			```
+		formatString: 0.00%;-0.00%;0.00%
+		lineageTag: ac175685-3a3d-4aab-bb8e-c1e4e4f7512d
+
+	measure Total_Actual_Value =
+			
+			-- 1. Calculate the total aggregated sum of all recorded actual values
+			-- This will sum every row within the current filter context
+			VAR varTotalSum = SUM('results'[Actual_Value])
+			
+			-- 2. Return the result
+			RETURN
+			    varTotalSum
+		lineageTag: 74b1de12-94d7-4198-a7c5-cb9e69ac5d57
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure Objective_Actual_Status_Completion_Rate = ```
+			
+			-- 1. Iterate over the 'kpis' dimension table in the current filter context
+			-- AVERAGEX will automatically handle the denominator (e.g., dividing by 3 if there are 3 KPIs)
+			VAR varAverageCompletion = 
+			    AVERAGEX(
+			        'kpis',
+			        
+			        -- 2. Retrieve the raw compliance percentage for each individual KPI
+			        -- COALESCE ensures that if a KPI has no data yet, it counts as 0% rather than being ignored
+			        VAR varRawCompliance = COALESCE([Compliance_Actual_Value_Percentage], 0)
+			        
+			        -- 3. Cap the compliance at 100% (1.0)
+			        -- MIN is the most efficient way to cap values in DAX (avoids IF statements)
+			        VAR varCappedCompliance = MIN(varRawCompliance, 1)
+			        
+			        -- 4. Return the capped value to the AVERAGEX iteration loop
+			        RETURN
+			            varCappedCompliance
+			    )
+			
+			-- 5. Return the final aggregated average (Format this measure as 0.00% in the UI)
+			RETURN
+			    varAverageCompletion
+			```
+		formatString: 0.00%;-0.00%;0.00%
+		lineageTag: 5653091a-86fa-41ae-8164-d187acfbbcf8
+
+	measure Dynamic_Compliance = ```
+			
+			-- 1. Identify the current KPI ID from the visual context
+			VAR varCurrentKpi = MAX('kpis'[KPI_ID])
+			
+			-- 2. Hardcode the routing logic based on specific KPI IDs
+			VAR varRoutedCompliance = 
+			    SWITCH(
+			        TRUE(),
+			        -- Cumulative KPIs (Uses Total_Actual_Value)
+			        varCurrentKpi IN {7, 9, 10}, [Compliance_Actual_Value_Percentage],
+			        
+			        -- Snapshot KPIs (Uses Actual_Status)
+			        -- Grouped 2, 7, 8, 9, and 10 as they all share the standard Compliance_Percentage logic
+			        varCurrentKpi IN {8}, [Compliance_Percentage],
+			        
+			        -- Default fallback just in case a new KPI is added in the future
+			        [Compliance_Percentage] 
+			    )
+			
+			RETURN
+			    varRoutedCompliance
+			```
+		formatString: 0.00%;-0.00%;0.00%
+		lineageTag: 15fef659-6bb3-468c-9f56-7c65482a31b1
+
 	column Result_ID
 		dataType: int64
 		formatString: 0

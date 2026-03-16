@@ -4,10 +4,10 @@
   "position": {
     "x": 867.5,
     "y": 136.66666666666669,
-    "z": 11003,
+    "z": 13000,
     "height": 25,
     "width": 42.5,
-    "tabOrder": 11002
+    "tabOrder": 13000
   },
   "visual": {
     "visualType": "multiRowCard",
@@ -276,20 +276,6 @@
             }
           ]
         }
-      },
-      {
-        "name": "72cc8f1ca83331650b58",
-        "field": {
-          "Measure": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "Results"
-              }
-            },
-            "Property": "Compliance_Percentage"
-          }
-        },
-        "type": "Advanced"
       }
     ]
   }
