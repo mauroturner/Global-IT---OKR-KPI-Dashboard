@@ -50,6 +50,24 @@ table Results
 		formatString: 0
 		lineageTag: a33060ba-5c27-4763-ade5-38bcc11a29f0
 
+	measure Compliance_Percentage = ```
+			
+			-- 1. Safely divide the Actual Status by the Planned target
+			-- Using DIVIDE() automatically handles divide-by-zero scenarios by returning BLANK
+			VAR varCompliance = 
+			    DIVIDE(
+			        [Actual_Status], 
+			        [Adjusted_Target_Value],
+			        BLANK()
+			    )
+			
+			-- 2. Return the decimal value (to be formatted as 0.00% in the UI)
+			RETURN
+			    varCompliance
+			```
+		formatString: 0.00%;-0.00%;0.00%
+		lineageTag: 1605eb15-a5e4-4751-a3a1-9554ebe2d367
+
 	column Result_ID
 		dataType: int64
 		formatString: 0
